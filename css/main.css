@@ -1,27 +1,52 @@
 body {
     margin: 0rem;
+    font-family: Dosis;
 }
 
 .header {
-    /* background-color: blue; */
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    /* justify-content: center; */
-    align-items: center;
-    max-height: 3rem;
-    width: 100%;
-    border-bottom-style: solid;
-    border-bottom-color: black;
+    position: relative;
+    height: 3rem;
+    background-color: #4286f4;
 }
 
 .header-image {
-    float: left;
-    padding-left: 0.25rem;
+    position: absolute;
+    left: .5%;
+    top: 9%;
     max-height: 2.5rem;
 }
 
 .header-title {
-    color: black;
+    position: relative;
+    float: left;
+    left: 50%;
+    transform: translate(-50%, -75%);
     font-size: 2rem;
+    color: white;
+}
+
+.why-software-container {
+    position: absolute;
+    height: 100%;
+    width: 100% - .25rem;
+    border: black;
+    border-width: .25rem;
+    border-style: solid;
+}
+
+.why-software-header {
+    position: relative;
+    width: auto;
+    padding-left: 7.5rem;
+    color: #4286f4;
+}
+
+.why-software-paragraph {
+    position: relative;
+    width: 85%;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    font-size: 2rem;
+    color: #f44242;
+    vertical-align: center;
 }
