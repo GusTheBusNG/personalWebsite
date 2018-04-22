@@ -3,50 +3,30 @@ body {
     font-family: Dosis;
 }
 
-.header {
-    position: relative;
-    height: 3rem;
-    background-color: #4286f4;
-}
-
-.header-image {
+.firstPage {
     position: absolute;
-    left: .5%;
-    top: 9%;
-    max-height: 2.5rem;
-}
-
-.header-title {
-    position: relative;
-    float: left;
-    left: 50%;
-    transform: translate(-50%, -75%);
-    font-size: 2rem;
-    color: white;
-}
-
-.why-software-container {
-    position: absolute;
+    display: flex;
+    width: 100%;
     height: 100%;
-    width: 100% - .25rem;
-    border: black;
-    border-width: .25rem;
-    border-style: solid;
+    justify-content: center;
+    align-items: center;
 }
 
-.why-software-header {
-    position: relative;
-    width: auto;
-    padding-left: 7.5rem;
-    color: #4286f4;
+.upperBar {
+    display: flex;
+    height: 5px;
 }
 
-.why-software-paragraph {
-    position: relative;
-    width: 85%;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    font-size: 2rem;
-    color: #f44242;
-    vertical-align: center;
+.lowerBar {
+
+}
+
+.titleText {
+    display: flex;
+    color: #F66733;
+    font-size: 5rem;
+    text-align: center;
+
+    border-top: 5px solid #0089FF;
+    border-bottom: 5px solid #0089FF;
 }
