@@ -4,12 +4,32 @@
         <title>Nicholas Gustafson</title>
         <link rel="stylesheet" href="css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+        <!--jQuery: <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     </head>
     <body>
         <div class="firstPage">
-            <div class="upperBar"></div>
-            <h1 class="titleText">Hi, I'm Nick</h1>
-            <div class="lowerBar"></div>
+            <div class="bar" id="upper"></div>
+            <h1 class="titleText">Hi! I'm Nick <img class="profileImg" hspace="20" src="img/Nick_Gustafson.png"></h1>
+            <div class="bar" id="lower"></div>
         </div>
     </body>
 </html>
+<script>
+    var upperBar = document.getElementById("upper");
+    var lowerBar = document.getElementById("lower");
+    var titleText = document.getElementsByClassName("titleText");
+
+    titleText[0].classList.toggle("fadeIn");
+
+    setTimeout(function() {
+        upperBar.classList.toggle("moveDown");
+    }, 2000);
+
+    // $(document).ready(function() {
+    //     this works with toggling the class
+    //     $("h1.titleText").toggleClass("fadeIn");
+    //     $("div.bar#upper").delay(800).toggleClass("moveDown");
+    //     $("div.bar#lower").delay(1600).toggleClass("moveUp");
+    //     but delay does not work for whatever reason.
+    // });
+</script>
