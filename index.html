@@ -19,11 +19,15 @@
     var lowerBar = document.getElementById("lower");
     var titleText = document.getElementsByClassName("titleText");
 
-    titleText[0].classList.toggle("fadeIn");
+    titleText[0].classList.toggle("fadeInAnimaiton");
+
+    setTimeout(function() {
+        titleText[0].classList.toggle("fadeOutAnimaiton");
+    }, 2400);
 
     setTimeout(function() {
         upperBar.classList.toggle("moveDown");
-    }, 2000);
+    }, 2700);
 
     // $(document).ready(function() {
     //     this works with toggling the class

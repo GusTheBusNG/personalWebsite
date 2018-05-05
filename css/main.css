@@ -42,6 +42,44 @@ body {
     transition: opacity 700ms ease-in-out;
 }
 
+.fadeInAnimaiton {
+    animation-name: fadeIn;
+    animation-duration: 500ms;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.fadeOutAnimaiton {
+    animation-name: fadeOut;
+    animation-duration: 400ms;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 .fadeIn {
     opacity: 1;
 }
