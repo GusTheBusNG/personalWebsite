@@ -24,11 +24,11 @@ body {
 }
 
 .moveDown {
-    transform: translate(0, 225px);
+    transform: translate(0, 215px);
 }
 
 .moveUp {
-    transform: translate(0, -225px);
+    transform: translate(0, -215px);
 }
 
 /* title text, fadin, fadout, and profileimg */
@@ -39,7 +39,6 @@ body {
     font-size: 5rem;
     text-align: center;
     opacity: 0;
-    transition: opacity 700ms ease-in-out;
 }
 
 .fadeInAnimaiton {
@@ -80,11 +79,7 @@ body {
     }
 }
 
-.fadeIn {
-    opacity: 1;
-}
-
 .profileImg {
-    height: 7rem;
-    width: 7rem;
+    height: 6rem;
+    width: 6rem;
 }

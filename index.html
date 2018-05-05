@@ -4,7 +4,6 @@
         <title>Nicholas Gustafson</title>
         <link rel="stylesheet" href="css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-        <!--jQuery: <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     </head>
     <body>
         <div class="firstPage">
@@ -14,26 +13,4 @@
         </div>
     </body>
 </html>
-<script>
-    var upperBar = document.getElementById("upper");
-    var lowerBar = document.getElementById("lower");
-    var titleText = document.getElementsByClassName("titleText");
-
-    titleText[0].classList.toggle("fadeInAnimaiton");
-
-    setTimeout(function() {
-        titleText[0].classList.toggle("fadeOutAnimaiton");
-    }, 2400);
-
-    setTimeout(function() {
-        upperBar.classList.toggle("moveDown");
-    }, 2700);
-
-    // $(document).ready(function() {
-    //     this works with toggling the class
-    //     $("h1.titleText").toggleClass("fadeIn");
-    //     $("div.bar#upper").delay(800).toggleClass("moveDown");
-    //     $("div.bar#lower").delay(1600).toggleClass("moveUp");
-    //     but delay does not work for whatever reason.
-    // });
-</script>
+<script src="scripts/homePage.js"></script>
