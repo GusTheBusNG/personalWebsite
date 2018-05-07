@@ -16,29 +16,124 @@ body {
 /* blue bar, and bar movements */
 
 .bar {
+    position: relative;
     display: flex;
-    height: 5px;
-    width: 33%;
+    height: .35rem;
+    width: 45%;
     background-color: #0089FF;
-    transition: transform 400ms ease-in-out;
+    transition: transform 500ms ease-in-out;
+}
+
+#upperBar {
+    top: 4rem;
+}
+
+#lowerBar {
+    top: -4rem;
+}
+
+.widen {
+    animation-name: widen;
+    animation-duration: 500ms;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
 }
 
 .moveDown {
-    transform: translate(0, 215px);
+    transform: translate(0, 15.35rem);
 }
 
 .moveUp {
-    transform: translate(0, -215px);
+    transform: translate(0, -15.35rem);
+}
+
+.moveToTop {
+    transform: translate(0, -18.5rem);
+}
+
+.moveToBottom {
+    transform: translate(0, 18.5rem);
+}
+
+@keyframes widen {
+    0% {
+        width: 45%;
+    }
+    100% {
+        width: 80%;
+    }
 }
 
 /* title text, fadin, fadout, and profileimg */
 
+.centerRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.titleTextWrapper {
+    display: flex;
+    width: 70rem;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+}
+
 .titleText {
+    position: relative;
     display: flex;
     color: #F66733;
     font-size: 5rem;
     text-align: center;
     opacity: 0;
+}
+
+.whySoftwareExplination {
+    position: relative;
+    display: flex;
+    font-size: 2rem;
+    text-align: center;
+    opacity: 0;
+}
+
+.arrowWrapper {
+    display: flex;
+    position: relative;
+    border-style: solid;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    color: #707070;
+    opacity: 0;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+/* #leftArrowWrapper {
+    left: -1rem;
+} */
+
+.arrow {
+    display: flex;
+    position: relative;
+    font-size: 5rem;
+    top: -.17rem;
+    color: #707070;
+    opacity: 0;
+}
+
+#leftArrow {
+    left: -.3rem;
+}
+
+#rightArrow {
+    left: .3rem;
 }
 
 .fadeInAnimaiton {
@@ -53,7 +148,7 @@ body {
 
 .fadeOutAnimaiton {
     animation-name: fadeOut;
-    animation-duration: 400ms;
+    animation-duration: 500ms;
     animation-delay: 0s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
@@ -67,6 +162,7 @@ body {
     }
     100% {
         opacity: 1;
+        visibility: visible;
     }
 }
 
@@ -76,10 +172,42 @@ body {
     }
     100% {
         opacity: 0;
+        visibility: hidden;
     }
 }
 
 .profileImg {
     height: 6rem;
     width: 6rem;
+}
+
+/* Quote styling */
+
+.displayNone {
+    display: none;
+}
+
+.quoteWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 80rem;
+}
+
+.quote {
+    position: relative;
+    display: flex;
+    opacity: 1;
+    font-size: 2rem;
+    text-align: center;
+    color: #707070;
+}
+
+#upperQuote {
+    top: -10rem;
+}
+
+#lowerQuote {
+    top: 10rem;
 }

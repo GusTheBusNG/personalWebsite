@@ -7,10 +7,27 @@
     </head>
     <body>
         <div class="firstPage">
-            <div class="bar" id="upper"></div>
-            <h1 class="titleText">Hi! I'm Nick <img class="profileImg" hspace="20" src="img/Nick_Gustafson.png"></h1>
-            <div class="bar" id="lower"></div>
+            <div class="bar" id="upperBar"></div>
+            <div class="quoteWrapper">
+                <p class="quote" id="upperQuote"></p>
+            </div>
+            <div class="centerRow">
+                <div class="arrowWrapper" id="leftArrowWrapper" onclick="leftArrowClicked()">
+                    <span class="arrow" id="leftArrow">&#10094;</span>
+                </div>
+                <div class="titleTextWrapper">
+                    <h1 class="titleText">Hi! I'm Nick <img class="profileImg" hspace="20" src="img/Nick_Gustafson.png"></h1>
+                </div>
+                <div class="arrowWrapper" id="rightArrowWrapper" onclick="rightArrowClicked()">
+                    <span class="arrow" id="rightArrow">&#10095;</span>
+                </div>
+            </div>
+            <div class = "quoteWrapper">
+                <p class="quote" id="lowerQuote"></p>
+            </div>
+            <div class="bar" id="lowerBar"></div>
         </div>
     </body>
 </html>
 <script src="scripts/homePage.js"></script>
+<script src="scripts/introductionText.js"></script>
