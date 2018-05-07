@@ -105,3 +105,72 @@
     border-color: #F66733;
     top: 5rem;
 }
+
+.experienceDescriptionContainer {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 75%;
+    margin-left: 2%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.experienceTitle {
+    display: flex;
+    position: relative;
+    font-size: 2rem;
+    height: auto;
+    margin: 0;
+}
+
+.experienceLocation {
+    display: flex;
+    position: relative;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.experienceDescription {
+    display: flex;
+    position: relative;
+    margin-top: 1%;
+}
+
+.experienceDurationContainer {
+    display: flex;
+    position: relative;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experienceDate {
+    display: flex;
+    position: relative;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.experienceDurationBar {
+    display: flex;
+    position: relative;
+    width: .35rem;
+    height: 80%;
+}
+
+#firstExperience .experienceDurationBar {
+    background-color: #28A028;
+}
+
+#secondExperience .experienceDurationBar {
+    background-color: #F66733;
+}
+
+#thridExperience .experienceDurationBar {
+    background-color: #0089FF;
+}
+
+#forthExperience .experienceDurationBar {
+    background-color: #F66733;
+}
