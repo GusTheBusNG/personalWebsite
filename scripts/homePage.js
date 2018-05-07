@@ -56,33 +56,40 @@ setTimeout(function() {
 }, 6400); // 6400
 
 function rightArrowClicked() {
-    if (i + 1 > quoteScript.length && j + 1 > whySoftwareScript.length) {
+    i++;
+    j++;
+    if (i + 1 > quoteScript.length - 1) {
         i = quoteScript.length - 2;
+    }
+    if (j > whySoftwareScript.length - 1) {
         j = whySoftwareScript.length - 1;
     }
-    setNewQuotes(++i % quoteScript.length, ++i % quoteScript.length);
-    changeTitleTextTo(whySoftwareScript[++j]);
+    setNewQuotes(i, ++i);
+    changeTitleTextTo(whySoftwareScript[j]);
     if (j == 1) {
         fadeIn(arrowWrapper[0]);
         fadeIn(leftArrow);
-    } else if (j == quoteScript.length - 1) {
+    } else if (j == whySoftwareScript.length - 1) {
         fadeOut(arrowWrapper[1]);
         fadeOut(rightArrow);
     }
 }
 
 function leftArrowClicked() {
-    if (i - 2 < 0 && j - 1 < 0) {
-        i = 2;
-        j = 1;
+    i -= 3;
+    j--;
+    if (i < 0) {
+        i = 0;
     }
-    i -= 2;
+    if (j < 0) {
+        j = 0;
+    }
     setNewQuotes(i, ++i);
-    changeTitleTextTo(whySoftwareScript[--j]);
+    changeTitleTextTo(whySoftwareScript[j]);
     if (j == 0) {
         fadeOut(leftArrow);
         fadeOut(arrowWrapper[0]);
-    } else if (j == quoteScript.length - 2) {
+    } else if (j == whySoftwareScript.length - 2) {
         fadeIn(rightArrow);
         fadeIn(arrowWrapper[1]);
     }
