@@ -4,6 +4,7 @@
 
 .pageTitle {
     font-size: 3rem;
+    opacity: 0;
 }
 
 .timelineContainer {
@@ -12,18 +13,49 @@
     height: 90vh;
     width: 100vw;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     align-content: space-around;
 }
 
 .verticalTimelineBar {
     display: flex;
     position: relative;
-    height: 95%;
+    height: 0%;
     width: .7rem;
     background-color: #0089FF;
     align-items: center;
     justify-content: center;
+    visibility: hidden;
+}
+
+.verticalTimelineBar::after {
+    content: "";
+    display: block;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    position: absolute;
+        bottom: 0; left: 0;
+    width: 100%;
+    height: 5%;
+}
+
+.drawInAnimationMainBar {
+    animation-name: drawInMain;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes drawInMain {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 95%;
+        visibility: visible;
+    }
 }
 
 .dotContainer {
@@ -44,6 +76,7 @@
     border-radius: 50%;
     border-style: solid;
     border-width: 1rem;
+    opacity: 0;
 }
 
 .dot:nth-child(1) {
@@ -71,12 +104,8 @@
     width: 40%;
 }
 
-.experienceColumn#firstExperienceColumn {
-    top: -3rem
-}
-
 .experienceColumn#secondExperienceColumn {
-    top: 10rem;
+    top: 14rem;
 }
 
 .experience {
@@ -86,6 +115,7 @@
     width: 90%;
     border-style: solid;
     border-width: 1rem;
+    opacity: 0;
 }
 
 .experience#firstExperience {
@@ -150,13 +180,15 @@
     position: relative;
     margin: 0;
     font-size: 1.2rem;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .experienceDurationBar {
     display: flex;
     position: relative;
     width: .35rem;
-    height: 80%;
+    height: 0%;
 }
 
 #firstExperience .experienceDurationBar {
@@ -173,4 +205,34 @@
 
 #forthExperience .experienceDurationBar {
     background-color: #F66733;
+}
+
+.experienceDurationBar::after {
+    content: "";
+    display: block;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    position: absolute;
+        bottom: 0; left: 0;
+    width: 100%;
+    height: 10%;
+}
+
+.drawInAnimation {
+    animation-name: drawIn;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes drawIn {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 80%;
+        visibility: visible;
+    }
 }
