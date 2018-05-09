@@ -1,0 +1,81 @@
+#skills {
+    display: flex;
+    position: relative;
+    top: 10rem;
+    justify-content: center;
+}
+
+#skillsTitle {
+    display: flex;
+    align-items: center;
+}
+
+.javascriptLogo {
+    display: flex;
+    height: 4rem;
+    width: 4rem;
+}
+
+.skillsContainer {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    top: 10rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.skillsColumnContainer {
+    display: flex;
+    position: relative;
+    height: auto;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillType {
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    font-size: 2rem;
+}
+
+.skillTypeContentContainer {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-start;
+    left: 27%;
+    height: auto;
+}
+
+.skillBar {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: .35rem;
+    background-color: #0089FF;
+    margin-right: 1rem;
+}
+
+.skills {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.skill {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.stars {
+    display: flex;
+    position: relative;
+    max-width: 7rem;
+    max-height: 2rem;
+}

@@ -18,3 +18,32 @@ sendWhySoftwareList([
     "While I know I am only highlighting the ending I must also say that life is not only about the finished product but also the journey. Along my journey, I have met some amazing people as well as had some unforgettable experiences, not only working on making a finished product better but also having fun with whoever worked with me outside of the product.",
     "So I am continuing to do what I know best: work hard and have fun doing it. This is how I stay true to myself and how I remind myself what is truly important to me."
 ]);
+sendSkillsLanguages([
+    {name: "TypeScript", stars: 5},
+    {name: "JavaScript", stars: 4.5},
+    {name: "Java", stars: 4},
+    {name: "C++", stars: 4},
+    {name: "C", stars: 4},
+    {name: "HTML", stars: 4},
+    {name: "CSS", stars: 4},
+    {name: "PHP", stars: 3.5},
+    {name: "MySQL", stars: 3.5},
+    {name: "PostgreSQL", stars: 3},
+    {name: "ARM", stars: 5}
+]);
+sendSkillsFramewors([
+    {name: "Protractor", stars: 5},
+    {name: "Appium", stars: 5},
+    {name: "Angular 4", stars: 4},
+    {name: "ExpressJS", stars: 3.5},
+    {name: "NodeJS", stars: 3.5},
+    {name: "Docker", stars: 3}
+]);
+sendSkillsTools([
+    {name: "Bash", stars: 4.5},
+    {name: "Git", stars: 4.5},
+    {name: "Adobe Xd", stars: 4.5},
+    {name: "Postman", stars: 3.5},
+    {name: "AWS", stars: 2.5},
+    {name: "Unity", stars: 2.5}
+]);
