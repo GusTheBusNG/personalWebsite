@@ -29,7 +29,7 @@ sendSkillsLanguages([
     {name: "PHP", stars: 3.5},
     {name: "MySQL", stars: 3.5},
     {name: "PostgreSQL", stars: 3},
-    {name: "ARM", stars: 5}
+    {name: "ARM", stars: 3}
 ]);
 sendSkillsFramewors([
     {name: "Protractor", stars: 5},
