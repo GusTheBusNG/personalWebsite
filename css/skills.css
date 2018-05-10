@@ -54,10 +54,20 @@
 .skillBar {
     display: flex;
     position: relative;
-    height: 100%;
+    height: 0%;
     width: .35rem;
     background-color: #0089FF;
     margin-right: 1rem;
+}
+
+.skillBar::after {
+    content: "";
+    display: block;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    position: absolute;
+        bottom: 0; left: 0;
+    width: 100%;
+    height: 5%;
 }
 
 .skills {
@@ -71,6 +81,15 @@
     display: flex;
     position: relative;
     align-items: center;
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
+
+.ratingsContainer {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .stars {
@@ -78,4 +97,5 @@
     position: relative;
     max-width: 7rem;
     max-height: 2rem;
+    margin-bottom: 1.3rem;
 }
