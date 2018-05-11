@@ -10,7 +10,7 @@
     align-items: center;
 }
 
-.javascriptLogo {
+.logo {
     display: flex;
     height: 4rem;
     width: 4rem;
@@ -48,7 +48,18 @@
     flex-direction: row;
     justify-content: flex-start;
     left: 27%;
-    height: auto;
+}
+
+.skillTypeContentContainer #firstSkillColumn {
+    height: 50vh;
+}
+
+.skillTypeContentContainer #secondSkillColumn {
+    height: 25vh;
+}
+
+.skillTypeContentContainer #thirdSkillColumn {
+    height: 25vh;
 }
 
 .skillBar {

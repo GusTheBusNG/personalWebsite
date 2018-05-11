@@ -1,0 +1,135 @@
+#education {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+#educationTitle {
+    display: flex;
+    align-items: center;
+}
+
+.educationContainer {
+    display: flex;
+    position: relative;
+    height: 80vh;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+.educationOverviewContainer {
+    display: flex;
+    position: relative;
+    width: 80%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.educationNamesContainer {
+    display: flex;
+    position: relative;
+    width: 70%;
+    flex-direction: column;
+}
+
+.universityName {
+    display: flex;
+    position: relative;
+    color: #F66733;
+    font-size: 2.25rem;
+    margin: 0;
+    margin-top: 2rem;
+}
+
+.majorContainer {
+    display: flex;
+    position: relative;
+    left: 5%;
+    flex-direction: column;
+}
+
+.major {
+    display: flex;
+    position: relative;
+    font-size: 1.5rem;
+    margin: 0;
+    margin-top: 2rem;
+}
+
+.minor {
+    display: flex;
+    position: relative;
+    font-size: 1.25rem;
+    margin: 0;
+    margin-top: 2rem;
+}
+
+.GPAContainer {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-content: flex-end;
+}
+
+.GPA {
+    display: flex;
+    position: relative;
+    font-size: 1.5rem;
+    margin: 0;
+    margin-top: 2.0rem;
+}
+
+.highlightOrange {
+    color: #F66733;
+    margin-left: .5rem;
+}
+
+.highlightBlue {
+    color: #0089FF;
+    margin-left: .5rem;
+}
+
+/* Notable Courses styling */
+
+.notableCoursesTitleContainer {
+    display: flex;
+    position: relative;
+    width: 80%;
+    justify-content: flex-start;
+    margin-top: 3rem;
+}
+
+.notableCoursesTitle {
+    display: flex;
+    position: relative;
+    color: #F66733;
+    font-size: 2.25rem;
+    margin: 0;
+    margin-top: 2rem;
+}
+
+.notableCoursesContainer {
+    display: flex;
+    position: relative;
+    width: 75%;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.classTitle {
+    text-align: left;
+    font-size: 1.5rem;
+    color: #F66733;
+    padding-bottom: .5rem;
+    padding-right: .5rem;
+}
+
+.classDescription {
+    text-align: left;
+    vertical-align: top;
+    font-size: 1.25rem;
+    padding-bottom: 1.5rem;
+    padding-right: .5rem;
+}

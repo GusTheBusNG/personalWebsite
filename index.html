@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/timeline.css">
         <link rel="stylesheet" href="css/skills.css">
+        <link rel="stylesheet" href="css/education.css">
         <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     </head>
     <body>
@@ -97,12 +98,12 @@
         </div>
 
         <div class="pageTitleContainer" id="skills">
-            <h1 class="pageTitle" id="skillsTitle">Skills‍ <img class="javascriptLogo" hspace="20" src="img/javascriptLogo.png"></h1>
+            <h1 class="pageTitle" id="skillsTitle">Skills‍ <img class="logo" hspace="20" src="img/javascriptLogo.png"></h1>
         </div>
         <div class="skillsContainer">
             <div class="skillsColumnContainer">
                 <h2 class="skillType">Languages</h2>
-                <div class="skillTypeContentContainer">
+                <div class="skillTypeContentContainer" id="firstSkillColumn">
                     <div class="skillBar"></div>
                     <div class="skills" id="languageSkills">
                     </div>
@@ -112,7 +113,7 @@
             </div>
             <div class="skillsColumnContainer">
                 <h2 class="skillType">Frameworks / Libraries</h2>
-                <div class="skillTypeContentContainer">
+                <div class="skillTypeContentContainer" id="secondSkillColumn">
                     <div class="skillBar"></div>
                     <div class="skills" id="frameworkSkills">
                     </div>
@@ -122,13 +123,40 @@
             </div>
             <div class="skillsColumnContainer">
                 <h2 class="skillType">Tools</h2>
-                <div class="skillTypeContentContainer">
+                <div class="skillTypeContentContainer" id="thirdSkillColumn">
                     <div class="skillBar"></div>
                     <div class="skills" id="toolSkills">
                     </div>
                     <div class="ratingsContainer" id="toolRatings">
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="pageTitleContainer" id="education">
+            <h1 class="pageTitle" id="educationTitle">Education <img class="logo" hspace="20" src="img/clemsonPaw.png"></h1>
+        </div>
+        <div class="educationContainer">
+            <div class="educationOverviewContainer">
+                <div class="educationNamesContainer">
+                    <h2 class="universityName">Clemson University</h2>
+                    <div class="majorContainer">
+                        <h3 class="major">Bachelor of Science in <span class="highlightOrange">Computer Science</span></h3>
+                        <h4 class="minor">Minor in <span class="highlightOrange">Business Administration</span></h4>
+                    </div>
+                </div>
+                <div class="GPAContainer">
+                    <h3 class="GPA">Fall 2020</h3>
+                    <h3 class="GPA">GPA in Major: <span class="highlightBlue">4.00/4.00</span></h3>
+                    <h3 class="GPA">Overall GPA: <span class="highlightBlue">3.94/4.00</span></h3>
+                </div>
+            </div>
+            <div class="notableCoursesTitleContainer">
+                <h2 class="notableCoursesTitle">Notable Courses</h2>
+            </div>
+            <div class="notableCoursesContainer">
+                <table id="notableCoursesTable">
+                </table>
             </div>
         </div>
     </body>
@@ -138,4 +166,5 @@
 <script src="scripts/timeline.js"></script>
 <script src="scripts/scorllingControls.js"></script>
 <script src="scripts/skills.js"></script>
+<script src="scripts/notableCourses.js"></script>
 <script src="scripts/information.js"></script>
