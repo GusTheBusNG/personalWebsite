@@ -51,6 +51,7 @@
     position: relative;
     max-width: 100%;
     font-size: 2rem;
+    opacity: 0;
 }
 
 .skillTypeContentContainer {
@@ -97,6 +98,7 @@
     position: relative;
     flex-direction: column;
     justify-content: flex-start;
+    opacity: 0;
 }
 
 .skill {
@@ -112,6 +114,7 @@
     position: relative;
     flex-direction: column;
     justify-content: flex-start;
+    opacity: 0;
 }
 
 .stars {

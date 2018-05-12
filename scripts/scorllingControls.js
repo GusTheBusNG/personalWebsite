@@ -56,6 +56,11 @@ $(window).on("load",function() {
             if (skillBar < windowBottom) {
                 if ($(this).css("height") == "0px") {
                     $(this).toggleClass("drawInAnimationMainBar");
+                    $(".skillType").fadeTo(300, 1);
+                    $(".skills").fadeTo(300, 1);
+                    $(".skills::after").toggleClass("fadeOutLinearGradient");
+                    $(".ratingsContainer").fadeTo(300, 1);
+                    $(".ratingsContainer::after").toggleClass("fadeOutLinearGradient");
                 }
             }
         });
