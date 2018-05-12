@@ -55,3 +55,15 @@ sendNotableCourses([
     {title:"CPSC 2310 Introduction to Computer Organization", description: "Study of the machine architectures on which algorithms are implemented and requirements of architectures that support high-level languages, programming environments, and applications."},
     {title:"CPSC 3720 Introduction Software Engineering", description:"Intensive introduction to software engineering. Focuses on each major phase of the software lifecycle. Introductory coverage of requirements analysis, requirements modeling, design modeling, and project management. Intermediate coverage of module-level design principles, program specification and reasoning principles, and program validation and verification techniques."}
 ]);
+sendHobbieImg([
+    "cliff.jpg",
+    "repel.jpg",
+    "rockWay.jpg",
+    "lazer.jpg",
+    "eagleProject.jpg",
+    "sandiego.jpg",
+    "sandiegocliffs.jpg",
+    "riverbanks.jpg",
+    "trophies.jpg"
+]);
+sendHobbieImgRow("clemsonVsLousiville.jpg");
