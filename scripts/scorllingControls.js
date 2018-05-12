@@ -9,7 +9,7 @@ $(window).on("load",function() {
             }
         });
 
-        $(".experience").each(function(i) {
+        $(".experience").each(function() {
             var experienceContainer = $(this).offset().top + ($(this).outerHeight()/4);
 
             if (experienceContainer < windowBottom) {
@@ -56,6 +56,46 @@ $(window).on("load",function() {
             if (skillBar < windowBottom) {
                 if ($(this).css("height") == "0px") {
                     $(this).toggleClass("drawInAnimationMainBar");
+                }
+            }
+        });
+
+        $(".horizontalBar").each(function() {
+            var horizontalBar = $(this).offset().top + ($(this).outerHeight()*2);
+
+            if (horizontalBar < windowBottom) {
+                if ($(this).css("width") == "0px") {
+                    $(this).toggleClass("drawToRightAnimaiton");
+                }
+            }
+        });
+
+        $(".majorContainer").each(function() {
+            var majorContainer = $(this).offset().top + ($(this).outerHeight()*.4);
+
+            if (majorContainer < windowBottom) {
+                if ($(this).css("opacity") == 0) {
+                    $(this).toggleClass("fadeInAndUp");
+                }
+            }
+        });
+
+        $(".GPAContainer").each(function() {
+            var GPAContainer = $(this).offset().top + ($(this).outerHeight()*.4);
+
+            if (GPAContainer < windowBottom) {
+                if ($(this).css("opacity") == 0) {
+                    $(this).toggleClass("fadeInAndRight");
+                }
+            }
+        });
+
+        $(".notableCoursesContainer").each(function() {
+            var notableCoursesContainer = $(this).offset().top + ($(this).outerHeight()*.2);
+
+            if (notableCoursesContainer < windowBottom) {
+                if ($(this).css("opacity") == 0) {
+                    $(this).toggleClass("fadeInAndUp");
                 }
             }
         });

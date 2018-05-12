@@ -29,10 +29,21 @@
 .skillsColumnContainer {
     display: flex;
     position: relative;
-    height: auto;
     width: 25%;
     flex-direction: column;
     align-items: center;
+}
+
+.skillsColumnContainer #firstSkillColumn {
+    height: 31rem;
+}
+
+.skillsColumnContainer #secondSkillColumn {
+    height: 16.5rem;
+}
+
+.skillsColumnContainer #thirdSkillColumn {
+    height: 16.5rem;
 }
 
 .skillType {
