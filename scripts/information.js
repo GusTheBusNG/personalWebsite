@@ -66,4 +66,8 @@ sendHobbieImg([
     "riverbanks.jpg",
     "trophies.jpg"
 ]);
-sendHobbieImgRow("clemsonVsLousiville.jpg");
+sendHobbieImgRow([
+    "clemsonVsLousiville.jpg",
+    "nationalChampionship.jpg",
+    "moutains.jpg"
+]);
