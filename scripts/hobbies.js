@@ -5,7 +5,7 @@ var indicesOfCurrentImages = [];
 
 function sendHobbieImg(hobbieImgs) {
     this.hobbieImgs = hobbieImgs;
-    flopImages(Math.floor(Math.random() * 10), 10, false);
+    // flopImages(Math.floor(Math.random() * 10), 10, false);
     for (var i = 0; i < hobbies.length; i++) {
         hobbies[i].style.backgroundImage = buildHobbieStyle(hobbieImgs[i % hobbieImgs.length]);
         indicesOfCurrentImages.push(i % hobbieImgs.length);
