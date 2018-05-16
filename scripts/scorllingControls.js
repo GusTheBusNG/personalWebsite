@@ -63,6 +63,16 @@ $(window).on("load",function() {
             }
         });
 
+        $(".awardContainer").each(function(i) {
+            var awardContainer = $(this).offset().top + ($(this).outerHeight()*.2);
+
+            if (awardContainer < windowBottom) {
+                if ($(this).css("opacity") == 0) {
+                    $(this).fadeTo(500 + (500 * i), 1);
+                }
+            }
+        })
+
         $(".horizontalBar").each(function() {
             var horizontalBar = $(this).offset().top + ($(this).outerHeight()*2);
 
