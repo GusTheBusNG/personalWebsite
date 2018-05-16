@@ -71,3 +71,14 @@ sendHobbieImgRow([
     "nationalChampionship.jpg",
     "moutains.jpg"
 ]);
+sendAwards([
+    ["Eagle Scout", "Boy Souts of America", "Troop 95", "Irmo, SC", "June 2015"],
+    ["President's List", "Clemson University", "Clemson, SC", "Fall 2016"],
+    ["Dean's List", "Clemson University", "Clemson, SC", "Fall 2016", "Spring 2017", "Spring 2018"],
+    ["Trumpet Section Leader", "Clemson University Tiger Band", "Fall 2018"],
+    ["Band Scholarships", "CU Tiger Band Assoc Schol", "CU Band(s) Grant-In-Aid", "Brooks Center GIA", "VO & AP Snelgrove GIA", "J Helms Endowed CUTBA GIA"],
+    ["Employees of Duke Energy", "Duke Energy", "Spring 2018"],
+    ["Life Scholarship", "State of South Carolina", "Fall 2016", "Spring 2017", "Spring 2018 + Enchancement"],
+    ["Half Site Leader", "Salkehatchie Summer Service", "Summer 2017"],
+    ["First Student ever from Dutch Fork High School to be accepted in The Honor Band of America", "Fall 2016"]
+]);
