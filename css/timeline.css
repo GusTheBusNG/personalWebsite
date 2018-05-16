@@ -10,7 +10,7 @@
 .timelineContainer {
     display: flex;
     position: relative;
-    height: 90vh;
+    height: 120vh;
     width: 100vw;
     justify-content: space-around;
     align-items: flex-start;
@@ -95,6 +95,10 @@
     border-color: #F66733;
 }
 
+.dot:nth-child(5) {
+    border-color: #0089FF;
+}
+
 .experienceColumn {
     display: flex;
     position: relative;
@@ -105,13 +109,13 @@
 }
 
 .experienceColumn#secondExperienceColumn {
-    top: 14rem;
+    top: 9rem;
 }
 
 .experience {
     display: flex;
     position: relative;
-    height: 40%;
+    height: 15rem;
     width: 90%;
     border-style: solid;
     border-width: 1rem;
@@ -128,12 +132,17 @@
 
 .experience#thridExperience {
     border-color: #0089FF;
-    top: 5rem;
+    top: 8rem;
 }
 
 .experience#forthExperience {
     border-color: #F66733;
-    top: 5rem;
+    top: -1rem;
+}
+
+.experience#fifthExperience {
+    border-color: #0089FF;
+    top: 17rem;
 }
 
 .experienceDescriptionContainer {
@@ -205,6 +214,10 @@
 
 #forthExperience .experienceDurationBar {
     background-color: #F66733;
+}
+
+#fifthExperience .experienceDurationBar {
+    background-color: #0089FF;
 }
 
 .experienceDurationBar::after {
