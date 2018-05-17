@@ -113,11 +113,8 @@ body {
     opacity: 0;
     margin-left: 2rem;
     margin-right: 2rem;
+    cursor: pointer;
 }
-
-/* #leftArrowWrapper {
-    left: -1rem;
-} */
 
 .arrow {
     display: flex;
