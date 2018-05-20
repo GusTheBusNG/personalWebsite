@@ -48,7 +48,7 @@ $(window).on("load",function() {
             }
         });
 
-        $(".awardContainer").each(function(i) {
+        $(".award").each(function(i) {
             var awardContainer = $(this).offset().top + ($(this).outerHeight()*.2);
 
             if (awardContainer < windowBottom) {

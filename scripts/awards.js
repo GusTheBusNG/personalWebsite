@@ -1,31 +1,28 @@
-var awardsContainer = document.getElementsByClassName("awardsContainer")[0];
-var awardsRow = document.getElementsByClassName("awardsRowContainer")[0];
-var triangleContainer = document.getElementsByClassName("triangleContainer")[0];
+var awardsContainer = document.getElementsByClassName("awardRowContainer")[0];
+var awardsRow = document.getElementsByClassName("awardRow")[0];
 var triangle = "<div class=\"lowerTriangle\"></div>";
 var numberOfAwardsRow = 1;
 
 function sendAwards(awards) {
     for (var i = 0; i < awards.length; i++) {
-        addAward(awards[i]);
-
-        if (i % 4 == 0 && i != 0) {
-            addNewRow();
-        }
+      if (i % 5 == 0 && i != 0) {
+          addNewRow();
+      }
+      addAward(awards[i]);
     }
 }
 
 function addNewRow() {
     awardsContainer.innerHTML +=
-        "<div class=\"awardsRowContainer\"></div><div class=\"triangleContainer\"></div>";
-    awardsRow = document.getElementsByClassName("awardsRowContainer")[numberOfAwardsRow];
-    triangleContainer = document.getElementsByClassName("triangleContainer")[numberOfAwardsRow++];
+        "<div class=\"awardRow\"></div><div class=\"triangleContainer\"></div>";
+    awardsRow = document.getElementsByClassName("awardRow")[numberOfAwardsRow];
 }
 
 function addAward(award) {
-    awardsRow.innerHTML += "<div class=\"awardContainer\">" +
+    awardsRow.innerHTML += "<div class=\"award\">" +
+        triangle +
         addAwardDescriptions(award) +
-        "</div>";
-    triangleContainer.innerHTML += triangle;
+      "</div>";
 }
 
 function addAwardDescriptions(award) {
