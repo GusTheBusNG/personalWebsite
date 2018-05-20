@@ -1,29 +1,21 @@
 var timeline = document.getElementsByClassName("timeline")[0];
+var isLeft = true;
 
 function sendExperiences(experiences) {
   for (var i = 0; i < experiences.length; i++) {
     if (i % 2 == 0) {
-      makeLeftExperience(experiences[i]);
+      isLeft = true;
     } else {
-      makeRightExperience(experiences[i]);
+      isLeft = false;
     }
+    makeExperience(experiences[i]);
   }
 }
 
-function makeLeftExperience(experience) {
+function makeExperience(experience) {
   timeline.innerHTML +=
-    "<div class=\"experienceContainer left\" style=\"border-color: " + experience.color + ";\">" +
-      "<div class=\"experience\">" +
-        getExperienceDescriptionContainer(experience) +
-        getExperienceDurationContainer(experience) +
-      "</div>" +
-    "</div>";
-}
-
-function makeRightExperience(experience) {
-  timeline.innerHTML +=
-    "<div class=\"experienceContainer right\" style=\"border-color: " + experience.color + ";\">" +
-      "<div class=\"experience\">" +
+    "<div class=\"experienceContainer " + getLeftOrRight() + "\">" +
+      "<div class=\"experience\" style=\"border-color: " + experience.color + ";\">" +
         getExperienceDescriptionContainer(experience) +
         getExperienceDurationContainer(experience) +
       "</div>" +
@@ -60,4 +52,8 @@ function makeExperienceDescription(experienceDescription) {
 
 function makeExperienceDate(experienceDate) {
   return "<h3 class=\"experienceDate\">" + experienceDate + "</h3>";
+}
+
+function getLeftOrRight() {
+  return isLeft ? "left" : "right";
 }

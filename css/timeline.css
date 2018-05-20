@@ -9,7 +9,7 @@
 
 .timeline {
   position: relative;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -28,7 +28,7 @@
   box-sizing: border-box;
   position: relative;
   width: 50%;
-  border: 16px solid;
+  padding: 10px 40px;
 }
 
 /* circles on timeline */
@@ -38,7 +38,7 @@
   position: absolute;
   width: 2.5rem;
   height: 2.5rem;
-  right: -68px;
+  right: -23px;
   background-color: white;
   border: .5rem solid #0089FF;
   top: 2rem;
@@ -46,22 +46,19 @@
   z-index: 1;
 }
 
-.left {
-  left: -2.5%;
-}
-
 .right {
-  left: 52.5%;
+  left: 50%;
 }
 
 .right::after {
-  left: -64px;
+  left: -18px;
 }
 
 .experience {
   display: flex;
   position: relative;
   box-sizing: border-box;
+  border: 16px solid;
 }
 
 .experienceDescriptionContainer {
@@ -135,7 +132,7 @@
 
 @media screen and (max-width: 850px) {
   .timeline::after {
-    left: 1rem;
+    left: 2rem;
   }
 
   .experienceContainer {
@@ -146,10 +143,10 @@
 
   /* fix the circles */
   .left::after, .right::after {
-    left: -5%;
+    left: 15px;
   }
 
-  .right {
+  .right, .left {
     left: 0%;
   }
 }
