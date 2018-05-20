@@ -1,8 +1,8 @@
 #skills {
     display: flex;
-    position: relative;
-    top: 10rem;
+    position: relative;;
     justify-content: center;
+    margin-top: 5rem;
 }
 
 #skillsTitle {
@@ -19,17 +19,17 @@
 .skillsContainer {
     display: flex;
     position: relative;
+    height: auto;
     width: 100vw;
-    height: 90vh;
-    top: 10rem;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .skillsColumnContainer {
     display: flex;
     position: relative;
-    width: 25%;
+    width: 25rem;
     flex-direction: column;
     align-items: center;
 }
@@ -60,18 +60,6 @@
     flex-direction: row;
     justify-content: flex-start;
     left: 27%;
-}
-
-.skillTypeContentContainer #firstSkillColumn {
-    height: 50vh;
-}
-
-.skillTypeContentContainer #secondSkillColumn {
-    height: 25vh;
-}
-
-.skillTypeContentContainer #thirdSkillColumn {
-    height: 25vh;
 }
 
 .skillBar {
@@ -143,4 +131,10 @@
         height: 95%;
         visibility: visible;
     }
+}
+
+@media (max-width: 650px) {
+  .skillTypeContentContainer {
+    left: 0;
+  }
 }
