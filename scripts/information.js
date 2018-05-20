@@ -20,6 +20,48 @@ sendWhySoftwareList([
     "While I know I am only highlighting the ending I must also say that life is not only about the finished product but also the journey. Along my journey, I have met some amazing people as well as had some unforgettable experiences, not only working on making a finished product better but also having fun with whoever worked with me outside of the product.",
     "So I am continuing to do what I know best: work hard and have fun doing it. This is how I stay true to myself and how I remind myself what is truly important to me."
 ]);
+sendExperiences([
+  {
+    title: "TSA National Competition",
+    location: "Dutch Fork High School @ Irmo, SC",
+    startDate: "November 2015",
+    endDate: "July 2016",
+    color: "#28A028",
+    description: "Designed and developed a web application for registration purposes at Camp Old Indian with 2 other students. Handled 1000s of scouts with 1000s of courses with advancement features and multiple user interfaces. Technology Students of America National Competition: National Finalist, 7th Place; State Competition: 1st Place. Inaugural software engineering competition for Dutch Fork High School."
+  },
+  {
+    title: "Tiger Band Website",
+    location: "Clemson University Tiger Band @ Clemson, SC",
+    startDate: "January 2017",
+    endDate: "Present",
+    color: "#F66733",
+    description: "Designed and developed a completely new website for Tiger Band, Clemson University Drumline, and Clemson University Tiger Band Association. Completed the website with a team of 3 students."
+  },
+  {
+    title: "BMW Digital and Mobile Co-op",
+    location: "BMW Group @ Greenville, SC",
+    startDate: "August 2017",
+    endDate: "December 2017",
+    color: "#0089FF",
+    description: "Implemented a major feature to be added into the main BMW mobile application with a software engineering team comprised of 8 people. Developed this feature in Angular 4 with Test-Driven Development. Improved 3 different micro-services for the major feature using ExpressJS. Designed and developed the end-to-end automated testing library for the major feature. Pioneered and created an automated testing stack to run automated tests on both iOS and Android simultaneously using Protractor and Appium."
+  },
+  {
+    title: "Virtual Reality Research",
+    location: "Clemson University Tiger Band @ Clemson, SC",
+    startDate: "January 2018",
+    endDate: "May 2018",
+    color: "#F66733",
+    description: "Designed a way to sync data coming from bio-pack systems and the virtual reality experience in order to measure and hypothesize based on the data recorded. Coordinated with the project leads on which virtual reality experience will be most effective to relax the patient undergoing surgery."
+  },
+  {
+    title: "BMW Digital and Mobile Co-op",
+    location: "BMW Group @ Greenville, SC",
+    startDate: "May 2018",
+    endDate: "Present",
+    color: "#0089FF",
+    description: ""
+  }
+]);
 sendSkillsLanguages([
     {name: "TypeScript", stars: 5},
     {name: "JavaScript", stars: 4.5},
@@ -85,6 +127,6 @@ sendAwards([
     ["First Student ever from Dutch Fork High School to be accepted in The Honor Band of America", "Fall 2016"]
 ]);
 
-$(window).resize(function (width) {
+$(window).resize(function () {
     refreshWidth();
 }).resize();

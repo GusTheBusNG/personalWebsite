@@ -35,21 +35,6 @@ $(window).on("load",function() {
             }
         });
 
-        $(".verticalTimelineBar").each(function() {
-            var experienceContainer = $(this).offset().top + ($(".experienceDurationContainer").outerHeight()*.2);
-
-            if (experienceContainer < windowBottom) {
-                if ($(this).css("height") == "0px") {
-                    $(this).toggleClass("drawInAnimationMainBar");
-                    setTimeout(function () {
-                        $('.dot').each(function(i) {
-                            $(".dot:nth-child(" + (++i) + ")").fadeTo(500, 1);
-                        });
-                    }, 2000);
-                }
-            }
-        });
-
         $(".skillBar").each(function() {
             var skillBar = $(this).offset().top + ($(this).outerHeight()*.2);
 
