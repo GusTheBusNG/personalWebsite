@@ -5,24 +5,57 @@
     width: 100vw;
     flex-direction: row;
     justify-content: center;
-    top: 10rem;
-    margin-bottom: 10rem;
 }
 
-.resumeContainer {
+.resumeAndMailContainer {
     display: flex;
     position: relative;
     height: 100%;
     width: 50%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.resumeLink {
+.resumeContainer {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.mailContainer {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.resumeStatement {
     display: flex;
     position: relative;
     text-align: center;
     font-size: 1.5rem;
+}
+
+.resumeLink {
+  display: flex;
+  position: relative;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  margin: .5rem;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.resumeStatement#link {
+  box-shadow: 0px 5px #0089FF;
+  top: -.2rem;
 }
 
 .socialLinksContainer {
@@ -91,4 +124,48 @@
 
 .socialIcon#insta {
     background-image: url('../img/instagram.png');
+}
+
+.shakeAnimation {
+    animation-name: shake;
+    animation-duration: 300ms;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 5;
+    animation-direction: normal;
+    animation-fill-mode: backwards;
+}
+
+@keyframes shake {
+    0% {
+      top: 0;
+    }
+    33% {
+      top: 10px;
+    }
+    66% {
+      top: 0;
+    }
+    100% {
+      top: -10px;
+    }
+}
+
+@media (max-width: 701px) {
+  .resumeAndSocialLinks {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .resumeContainer {
+    width: 100%;
+  }
+
+  .mailContainer {
+    width: 100%;
+  }
+
+  .socialLinksContainer {
+    width: 100%;
+  }
 }
