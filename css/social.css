@@ -35,14 +35,14 @@
   flex-wrap: nowrap;
 }
 
-.resumeStatement {
+.statement {
     display: flex;
     position: relative;
     text-align: center;
     font-size: 1.5rem;
 }
 
-.resumeLink {
+.link {
   display: flex;
   position: relative;
   font-size: 1.5rem;
@@ -53,7 +53,7 @@
   cursor: pointer;
 }
 
-.resumeStatement#link {
+.statement#link {
   box-shadow: 0px 5px #0089FF;
   top: -.2rem;
 }
