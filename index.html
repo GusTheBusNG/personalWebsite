@@ -10,13 +10,14 @@
         <link rel="stylesheet" href="css/hobbies.css">
         <link rel="stylesheet" href="css/social.css">
         <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+        <meta name=viewport content="width=device-width, initial-scale=1">
     </head>
     <body>
         <div class="firstPage">
-            <div class="bar" id="upperBar"></div>
-            <div class="quoteWrapper">
-                <p class="quote" id="upperQuote"></p>
+            <div class="quoteWrapper" id="upperQuote">
+                <p class="quote"></p>
             </div>
+            <div class="bar" id="upperBar"></div>
             <div class="centerRow">
                 <div class="arrowWrapper" id="leftArrowWrapper" onclick="leftArrowClicked()">
                     <span class="arrow" id="leftArrow">&#10094;</span>
@@ -27,11 +28,20 @@
                 <div class="arrowWrapper" id="rightArrowWrapper" onclick="rightArrowClicked()">
                     <span class="arrow" id="rightArrow">&#10095;</span>
                 </div>
-            </div>
-            <div class="quoteWrapper">
-                <p class="quote" id="lowerQuote"></p>
+
+                <div class="arrowsContainer mobileOnly">
+                    <div class="arrowWrapper mobileOnly" id="leftArrowWrapper" onclick="leftArrowClicked()">
+                        <span class="arrow" id="leftArrow">&#10094;</span>
+                    </div>
+                    <div class="arrowWrapper mobileOnly" id="rightArrowWrapper" onclick="rightArrowClicked()">
+                        <span class="arrow" id="rightArrow">&#10095;</span>
+                    </div>
+                </div>
             </div>
             <div class="bar" id="lowerBar"></div>
+            <div class="quoteWrapper" id="lowerQuote">
+                <p class="quote"></p>
+            </div>
         </div>
 
         <div class="pageTitleContainer">
@@ -43,7 +53,12 @@
                     <div class="experienceDescriptionContainer">
                         <h2 class="experienceTitle">TSA National Competition</h2>
                         <h3 class="experienceLocation">Dutch Fork High School @ Irmo, SC</h3>
-                        <p class="experienceDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="experienceDescription">
+                            Designed and developed a web application for registration purposes at Camp Old Indian with 2 other students.
+                            Handled 1000s of scouts with 1000s of courses with advancement features and multiple user interfaces.
+                            Technology Students of America National Competition: National Finalist, 7th Place; State Competition: 1st Place
+                            Inaugural software engineering competition for Dutch Fork High School
+                        </p>
                     </div>
                     <div class="experienceDurationContainer">
                         <h3 class="experienceDate">November 2015</h3>
@@ -55,7 +70,12 @@
                     <div class="experienceDescriptionContainer">
                         <h2 class="experienceTitle">BMW Digital and Mobile Co-op</h2>
                         <h3 class="experienceLocation">BMW Group @ Greenville, SC</h3>
-                        <p class="experienceDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="experienceDescription">Implemented a major feature to be added into the main
+                            BMW mobile application with a software engineering team comprised of 8 people. Developed this feature in Angular 4 with Test-Driven Development.
+                            Improved 3 different micro-services for the major feature using ExpressJS.
+                            Designed and developed the end-to-end automated testing library for the major feature.
+                            Pioneered and created an automated testing stack to run automated tests on both iOS and Android simultaneously using Protractor and Appium.
+                        </p>
                     </div>
                     <div class="experienceDurationContainer">
                         <h3 class="experienceDate">August 2017</h3>
@@ -90,7 +110,10 @@
                     <div class="experienceDescriptionContainer">
                         <h2 class="experienceTitle">Tiger Band Website</h2>
                         <h3 class="experienceLocation">Clemson University Tiger Band @ Clemson, SC</h3>
-                        <p class="experienceDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="experienceDescription"> Designed and developed a completely new website for
+                            Tiger Band, Clemson University Drumline, and Clemson
+                            University Tiger Band Association. Completed the website with a team of 3 students
+                        </p>
                     </div>
                     <div class="experienceDurationContainer">
                         <h3 class="experienceDate">January 2017</h3>
@@ -102,7 +125,13 @@
                     <div class="experienceDescriptionContainer">
                         <h2 class="experienceTitle">Virtual Reality Research</h2>
                         <h3 class="experienceLocation">Clemson University Human Interaction Lab @ Clemson, SC</h3>
-                        <p class="experienceDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p class="experienceDescription">Designed a way to sync data coming from bio-pack
+                            systems and the virtual reality experience in order to
+                            measure and hypothesize based on the data recorded.
+                            Coordinated with the project leads on which virtual reality
+                            experience will be most effective to relax the patient
+                            undergoing surgery.
+                        </p>
                     </div>
                     <div class="experienceDurationContainer">
                         <h3 class="experienceDate">January 2018</h3>

@@ -4,11 +4,13 @@ sendIntroductionList([
     "So here it is"
 ]);
 sendQuoteList([
-    "\"There\'s lots of ways to be, as a person.\" - Steve Jobs",
-    "\"The problem, often not discovered until late in life, is that when you look for things in life like love, meaning, motivation, it implies they are sitting behind a tree or under a rock. The most successful people in life recognize, that in life they create their own love, they manufacture their own meaning, they generate their own motivation.\" - Neil deGrasse Tyson",
     "\"One of the ways I believe people express their appreciations to the rest of humanity is to make something wonderful and put it out there\" - Steve Jobs",
+    "\"The problem, often not discovered until late in life, is that when you look for things in life like love, meaning, motivation, it implies they are sitting behind a tree or under a rock. The most successful people in life recognize, that in life they create their own love, they manufacture their own meaning, they generate their own motivation.\" - Neil deGrasse Tyson",
     "\"I will do what I can when I can so that when I cannot I will not wish that I would have when I could have\" - Dabo Swinney",
-    "\"Do or do not, there is no try\" - Yoda"
+    "\"Do or do not, there is no try\" - Yoda",
+    "\"Just smack it\" - Dan Mace",
+    "\"What you aim at is what you see\" - Jordan B Peterson",
+    "\"There\'s lots of ways to be, as a person.\" - Steve Jobs"
 ]);
 sendWhySoftwareList([
     "This is how I express my deep appreciation. I believe that there is nothing more amazing in this world than a true smile, and seeing someone truly smile at my work or because of my work makes me reflect on how much I love what I do. So I chose to start there, figuring out how to make people smile.",
@@ -79,6 +81,10 @@ sendAwards([
     ["Band Scholarships", "CU Tiger Band Assoc Schol", "CU Band(s) Grant-In-Aid", "Brooks Center GIA", "VO & AP Snelgrove GIA", "J Helms Endowed CUTBA GIA"],
     ["Employees of Duke Energy", "Duke Energy", "Spring 2018"],
     ["Life Scholarship", "State of South Carolina", "Fall 2016", "Spring 2017", "Spring 2018 + Enchancement"],
-    ["Half Site Leader", "Salkehatchie Summer Service", "Summer 2017"],
+    ["Assistant Site Leader", "Salkehatchie Summer Service", "Summer 2017"],
     ["First Student ever from Dutch Fork High School to be accepted in The Honor Band of America", "Fall 2016"]
 ]);
+
+$(window).resize(function (width) {
+    refreshWidth();
+}).resize();

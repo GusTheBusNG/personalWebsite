@@ -1,14 +1,18 @@
-var introductionScript, quoteScript, whySoftwareScript;
+var introductionScript, quoteScript, whySoftwareScript, shortQuotes = [], oldQuoteList = [];
 var upperBar = document.getElementById("upperBar");
 var lowerBar = document.getElementById("lowerBar");
-var upperQuote = document.getElementById("upperQuote");
-var lowerQuote = document.getElementById("lowerQuote");
+var quotes = document.getElementsByClassName("quote");
+var upperQuote = quotes[0];
+var lowerQuote = quotes[1];
 var titleText = document.getElementsByClassName("titleText")[0];
 var arrowWrapper = document.getElementsByClassName("arrowWrapper");
 var leftArrow = document.getElementById("leftArrow");
 var rightArrow = document.getElementById("rightArrow");
 var titleTextIsOrange = true;
 var i = 0, j = 0;
+var mobileOnly = false;
+var leftArrowShown = false, rightArrowShown = false;
+var canShowQuotes = false;
 
 fadeIn(titleText);
 
@@ -44,16 +48,16 @@ setTimeout(function() {
     }, 500);
 
     setTimeout(function() {
-        upperQuote.innerHTML = quoteScript[i]
+        upperQuote.innerHTML = quoteScript[i];
         fadeIn(upperQuote);
-
         lowerQuote.innerHTML = quoteScript[++i];
         fadeIn(lowerQuote);
+        canShowQuotes = true;
 
-        fadeIn(arrowWrapper[1]);
-        fadeIn(rightArrow);
+        fadeIn(getArrowWrapper(1));
+        rightArrowShown = true;
     }, 1000);
-}, 6400); // 6400
+}, 6400);
 
 function rightArrowClicked() {
     i++;
@@ -67,11 +71,11 @@ function rightArrowClicked() {
     setNewQuotes(i, ++i);
     changeTitleTextTo(whySoftwareScript[j]);
     if (j == 1) {
-        fadeIn(arrowWrapper[0]);
-        fadeIn(leftArrow);
+        fadeIn(getArrowWrapper(0));
+        leftArrowShown = true;
     } else if (j == whySoftwareScript.length - 1) {
-        fadeOut(arrowWrapper[1]);
-        fadeOut(rightArrow);
+        fadeOut(getArrowWrapper(1));
+        rightArrowShown = false;
     }
 }
 
@@ -87,11 +91,11 @@ function leftArrowClicked() {
     setNewQuotes(i, ++i);
     changeTitleTextTo(whySoftwareScript[j]);
     if (j == 0) {
-        fadeOut(leftArrow);
-        fadeOut(arrowWrapper[0]);
+        fadeOut(getArrowWrapper(0));
+        leftArrowShown = false;
     } else if (j == whySoftwareScript.length - 2) {
-        fadeIn(rightArrow);
-        fadeIn(arrowWrapper[1]);
+        fadeIn(getArrowWrapper(1));
+        rightArrowShown = true;
     }
 }
 
@@ -100,7 +104,7 @@ function setNewQuotes(firstIndex, secondIndex) {
     fadeOut(lowerQuote);
 
     setTimeout(function() {
-        upperQuote.innerHTML = quoteScript[firstIndex]
+        upperQuote.innerHTML = quoteScript[firstIndex];
         fadeIn(upperQuote);
 
         lowerQuote.innerHTML = quoteScript[secondIndex];
@@ -119,21 +123,65 @@ function changeTitleTextTo(message) {
     }, 500);
 }
 
+function refreshWidth() {
+    if (!mobileOnly && window.innerWidth <= 640) {
+        mobileOnly = true;
+        showRightArrows();
+    } else if (mobileOnly && window.innerWidth >= 640) {
+        mobileOnly = false;
+        showRightArrows();
+    }
+
+    var needShortQuotes = window.getComputedStyle(document.querySelector('body'), ':before').getPropertyValue('content').replace(/\"/g, '');
+    if (needShortQuotes == "true" && oldQuoteList.length == 0) {
+        i = 0;
+        oldQuoteList = quoteScript;
+        quoteScript = shortQuotes;
+        if (canShowQuotes) {
+            setNewQuotes(i, ++i);
+        }
+    } else if (needShortQuotes != "true" && oldQuoteList.length != 0) {
+        quoteScript = oldQuoteList;
+        oldQuoteList = [];
+        i = 0;
+        if (canShowQuotes) {
+            setNewQuotes(i, ++i);
+        }
+    }
+}
+
+function getArrowWrapper(index) {
+    return mobileOnly ? arrowWrapper[index + 2] : arrowWrapper[index];
+}
+
+function showRightArrows() {
+    if (leftArrowShown) {
+        fadeIn(getArrowWrapper(0));
+    }
+    if (rightArrowShown) {
+        fadeIn(getArrowWrapper(1));
+    }
+}
+
 function fadeOut(element) {
-    if (element.classList.contains("fadeInAnimaiton")) {
-        element.classList.toggle("fadeInAnimaiton");
-        element.classList.toggle("fadeOutAnimaiton");
-    } else {
-        element.classList.toggle("fadeOutAnimaiton");
+    if (!element.classList.contains("fadeOutAnimaiton")) {
+        if (element.classList.contains("fadeInAnimaiton")) {
+            element.classList.toggle("fadeInAnimaiton");
+            element.classList.toggle("fadeOutAnimaiton");
+        } else {
+            element.classList.toggle("fadeOutAnimaiton");
+        }
     }
 }
 
 function fadeIn(element) {
-    if (element.classList.contains("fadeOutAnimaiton")) {
-        element.classList.toggle("fadeOutAnimaiton");
-        element.classList.toggle("fadeInAnimaiton");
-    } else {
-        element.classList.toggle("fadeInAnimaiton");
+    if (!element.classList.contains("fadeInAnimaiton")) {
+        if (element.classList.contains("fadeOutAnimaiton")) {
+            element.classList.toggle("fadeOutAnimaiton");
+            element.classList.toggle("fadeInAnimaiton");
+        } else {
+            element.classList.toggle("fadeInAnimaiton");
+        }
     }
 }
 
@@ -166,6 +214,13 @@ function sendIntroductionList(introductionScript) {
 
 function sendQuoteList(quoteScript) {
     this.quoteScript = quoteScript;
+
+    var shortQuotesIndex = 0;
+    for (var quotesIndex = 0; quotesIndex < quoteScript.length; quotesIndex++) {
+        if (quoteScript[quotesIndex].length <= 160) {
+            shortQuotes[shortQuotesIndex++] = quoteScript[quotesIndex];
+        }
+    }
 }
 
 function sendWhySoftwareList(whySoftwareScript) {
