@@ -1,3 +1,5 @@
+var floppingImagesStarted = false;
+
 $(window).on("load",function() {
     $(window).scroll(function() {
         var windowBottom = $(this).scrollTop() + $(this).innerHeight();
@@ -96,6 +98,15 @@ $(window).on("load",function() {
                     $(this).toggleClass("fadeInAndUp");
                 }
             }
+        });
+
+        $(".hobbieContainer").each(function() {
+          var hobbieContainer = $(this).offset().top;
+
+          if (!floppingImagesStarted && hobbieContainer < windowBottom) {
+            flopImages(true);
+            floppingImagesStarted = true;
+          }
         });
     }).scroll();
 });
