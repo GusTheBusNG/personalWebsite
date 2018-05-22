@@ -1,10 +1,10 @@
 .pageTitleContainer {
-    text-align: center;
+  text-align: center;
 }
 
 .pageTitle {
-    font-size: 3rem;
-    opacity: 0;
+  font-size: 3rem;
+  opacity: 0;
 }
 
 .timeline {
@@ -62,72 +62,72 @@
 }
 
 .experienceDescriptionContainer {
-    display: flex;
-    position: relative;
-    height: 100%;
-    width: 75%;
-    margin-left: 2%;
-    flex-direction: column;
-    justify-content: flex-start;
+  display: flex;
+  position: relative;
+  height: 100%;
+  width: 75%;
+  margin-left: 2%;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .experienceTitle {
-    display: flex;
-    position: relative;
-    font-size: 2rem;
-    height: auto;
-    margin: 0;
+  display: flex;
+  position: relative;
+  font-size: 2rem;
+  height: auto;
+  margin: 0;
 }
 
 .experienceLocation {
-    display: flex;
-    position: relative;
-    font-size: 1.2rem;
-    margin: 0;
+  display: flex;
+  position: relative;
+  font-size: 1.2rem;
+  margin: 0;
 }
 
 .experienceDescription {
-    display: flex;
-    position: relative;
-    margin-top: 1%;
+  display: flex;
+  position: relative;
+  margin-top: 1%;
 }
 
 .experienceDurationContainer {
-    display: flex;
-    position: relative;
-    height: 15rem;
-    width: 25%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    align-self: center;
+  display: flex;
+  position: relative;
+  height: 15rem;
+  width: 25%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  align-self: center;
 }
 
 .experienceDate {
-    display: flex;
-    position: relative;
-    margin: 0;
-    font-size: 1.2rem;
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
+  display: flex;
+  position: relative;
+  margin: 0;
+  font-size: 1.2rem;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
 }
 
 .experienceDurationBar {
-    display: flex;
-    position: relative;
-    width: .35rem;
-    height: 0%;
+  display: flex;
+  position: relative;
+  width: .35rem;
+  height: 0%;
 }
 
 .experienceDurationBar::after {
-    content: "";
-    display: block;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
-    position: absolute;
-        bottom: 0; left: 0;
-    width: 100%;
-    height: 10%;
+  content: "";
+  display: block;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  position: absolute;
+    bottom: 0; left: 0;
+  width: 100%;
+  height: 10%;
 }
 
 @media screen and (max-width: 850px) {
@@ -172,21 +172,21 @@
 } */
 
 .drawInAnimation {
-    animation-name: drawIn;
-    animation-duration: 1s;
-    animation-delay: 0s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
+  animation-name: drawIn;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 
 @keyframes drawIn {
-    0% {
-        height: 0%;
-    }
-    100% {
-        height: 80%;
-        visibility: visible;
-    }
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 80%;
+    visibility: visible;
+  }
 }
