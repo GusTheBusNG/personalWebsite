@@ -83,13 +83,14 @@ function flopRandomImage() {
 
 function replaceWithRowImage(index) {
   hobbies[index].style.visibility = "hidden";
-  hobbies[index].outerHTML = makeHobbieRowImg();
   if (numberOfImagesPerRow == 2) {
     hobbies[(index + 1)].outerHTML = "";
+    hobbies[index].outerHTML = makeHobbieRowImg();
     numberOfImages--;
   } else {
     hobbies[(index + 1)].outerHTML = "";
     hobbies[(index + 1)].outerHTML = "";
+    hobbies[index].outerHTML = makeHobbieRowImg();
     numberOfImages -= 2;
   }
   hobbies[index].classList.toggle("flopAnimation");
@@ -110,8 +111,8 @@ function getIndexToStartReplacingWithRowImage() {
       index = getRandomIndex();
     }
   }
-  if (counter == 4) {
-    index = 0
+  if (counter >= 3) {
+    index = 0;
   }
   return index;
 }
@@ -129,7 +130,7 @@ function getImagesThatReplacedTheRowImage() {
 
 function flopNewImage(index) {
   hobbies[index].style.visibility = "hidden";
-  hobbies[index].style.backgroundImage = makeHobbieUrl(hobbieImgs[getRandomIndex()])
+  hobbies[index].style.backgroundImage = makeHobbieUrl(hobbieImgs[Math.floor(Math.random() * hobbieImgs.length)])
   hobbies[index].classList.toggle("flopAnimation");
   takeOffFlopAnimation(hobbies[index]);
   hobbies[index].style.visibility = "visible";
@@ -160,12 +161,12 @@ function getNumberOfImagesPerRow() {
 
 function makeHobbieImagesToReplaceRowImage(randomHobbieIndex) {
   if (numberOfImagesPerRow >= 3) {
-    var index = Math.floor(Math.random() * hobbieImgs.length) - 2;
+    var index = Math.abs(Math.floor(Math.random() * hobbieImgs.length) - 2);
     return "<div class=\"hobbieImg\" id=\"1\" style=\"background-image: " + makeHobbieUrl(hobbieImgs[index++]) + ";\"></div>" +
             "<div class=\"hobbieImg\" id=\"2\" style=\"background-image: " + makeHobbieUrl(hobbieImgs[index++]) + ";\"></div>" +
             "<div class=\"hobbieImg\" id=\"3\" style=\"background-image: " + makeHobbieUrl(hobbieImgs[index]) + ";\"></div>";
   }
-  var index = Math.floor(Math.random() * hobbieImgs.length) - 1;
+  var index = Math.abs(Math.floor(Math.random() * hobbieImgs.length) - 1);
   return "<div class=\"hobbieImg\" id=\"1\" style=\"background-image: " + makeHobbieUrl(hobbieImgs[index++]) + ";\"></div>" +
           "<div class=\"hobbieImg\" id=\"2\" style=\"background-image: " + makeHobbieUrl(hobbieImgs[index]) + ";\"></div>"
 }
