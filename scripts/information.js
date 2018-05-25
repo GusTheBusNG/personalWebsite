@@ -129,4 +129,5 @@ sendAwards([
 
 $(window).resize(function () {
   refreshWidth();
+  onResize();
 }).resize();
