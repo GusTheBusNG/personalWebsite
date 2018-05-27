@@ -27,6 +27,7 @@ function getExperienceDescriptionContainer(experience) {
       makeExperienceTitle(experience.title) +
       makeExperienceLocation(experience.location) +
       makeExperienceDescription(experience.description) +
+      makeExperienceTags(experience.tags, experience.color) +
     "</div>";
 }
 
@@ -52,6 +53,16 @@ function makeExperienceDescription(experienceDescription) {
 
 function makeExperienceDate(experienceDate) {
   return "<h3 class=\"experienceDate\">" + experienceDate + "</h3>";
+}
+
+function makeExperienceTags(experienceTags, color) {
+  var tagContainer = "<div class=\"experienceTagsContainer\">"
+  for (var i = 0; i < experienceTags.length; i++) {
+    tagContainer += "<div class=\"experienceTagContainer\" style=\"border-color: " + color + "\">" +
+                      "<h3 class=\"tag\">" + experienceTags[i] + "</h3>" +
+                    "</div>";
+  }
+  return tagContainer + "</div>";
 }
 
 function getLeftOrRight() {

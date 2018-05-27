@@ -92,6 +92,34 @@
   margin-top: 1%;
 }
 
+.experienceTagsContainer {
+  display: flex;
+  position: relative;
+  width: 100%;
+  align-self: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: .5rem;
+}
+
+.experienceTagContainer {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  height: 2rem;
+  padding: .2rem;
+  border: .35rem solid;
+  margin: .3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.tag {
+  display: flex;
+  position: relative;
+  font-size: 1rem;
+}
+
 .experienceDurationContainer {
   display: flex;
   position: relative;

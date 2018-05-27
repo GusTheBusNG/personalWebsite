@@ -1,16 +1,23 @@
 sendIntroductionList([
   "Why Software?",
   "Well it's kind of a long story...",
-  "So here it is"
+  "So let's get started"
 ]);
 sendQuoteList([
   "\"One of the ways I believe people express their appreciations to the rest of humanity is to make something wonderful and put it out there\" - Steve Jobs",
   "\"The problem, often not discovered until late in life, is that when you look for things in life like love, meaning, motivation, it implies they are sitting behind a tree or under a rock. The most successful people in life recognize, that in life they create their own love, they manufacture their own meaning, they generate their own motivation.\" - Neil deGrasse Tyson",
   "\"I will do what I can when I can so that when I cannot I will not wish that I would have when I could have\" - Dabo Swinney",
-  "\"Do or do not, there is no try\" - Yoda",
+  "\"Strength. Mastery. But weakness, folly, failure also. Yes, failure most of all. The greatest teacher, failure is.\" - Yoda",
   "\"Just smack it\" - Dan Mace",
   "\"What you aim at is what you see\" - Jordan B Peterson",
-  "\"There\'s lots of ways to be, as a person.\" - Steve Jobs"
+  "\"There\'s lots of ways to be, as a person.\" - Steve Jobs",
+  "\"Don't nourish your fears more than you nourish your hopes\"",
+  "\"I am not what I think I am, I am not what you think I am, I am what I think you think I am\" - Most people",
+  "\"I consider that our present sufferings are not worth comparing with the glory that will be revealed in us.\" - Romans 8:18 (NIV)",
+  "\"The biggest risk is not taking any risk. In a world that’s changing really quickly, the only strategy that is guaranteed to fail is not taking risks.\" — Mark Zuckerberg",
+  "\"The great thing in this world is not so much where you stand, as in what direction you are moving.\" — Oliver Wendell Holmes",
+  "\"The people that say, 'your dreams are impossible' have already quit on theirs.\" — Grant Cardone",
+  "\"Do the best you can until you know better. Then, when you know better, do better\" - Maya Angelou"
 ]);
 sendWhySoftwareList([
   "This is how I express my deep appreciation. I believe that there is nothing more amazing in this world than a true smile, and seeing someone truly smile at my work or because of my work makes me reflect on how much I love what I do. So I chose to start there, figuring out how to make people smile.",
@@ -27,7 +34,8 @@ sendExperiences([
     startDate: "November 2015",
     endDate: "July 2016",
     color: "#28A028",
-    description: "Designed and developed a web application for registration purposes at Camp Old Indian with 2 other students. Handled 1000s of scouts with 1000s of courses with advancement features and multiple user interfaces. Technology Students of America National Competition: National Finalist, 7th Place; State Competition: 1st Place. Inaugural software engineering competition for Dutch Fork High School."
+    description: "Designed and developed a web application for registration purposes at Camp Old Indian with 2 other students. Handled 1000s of scouts with 1000s of courses with advancement features and multiple user interfaces. Technology Students of America National Competition: National Finalist, 7th Place; State Competition: 1st Place. Inaugural software engineering competition for Dutch Fork High School.",
+    tags: ["PHP", "MySQL", "Laravel 5", "HTML", "Google Cloud"]
   },
   {
     title: "Tiger Band Website",
@@ -35,7 +43,8 @@ sendExperiences([
     startDate: "January 2017",
     endDate: "Present",
     color: "#F66733",
-    description: "Designed and developed a completely new website for Tiger Band, Clemson University Drumline, and Clemson University Tiger Band Association. Completed the website with a team of 3 students."
+    description: "Designed and developed a completely new website for Tiger Band, Clemson University Drumline, and Clemson University Tiger Band Association. Completed the website with a team of 3 students.",
+    tags: ["HTML", "CSS", "JavaScript", "PHP", "AWS"]
   },
   {
     title: "BMW Digital and Mobile Co-op",
@@ -43,7 +52,8 @@ sendExperiences([
     startDate: "August 2017",
     endDate: "December 2017",
     color: "#0089FF",
-    description: "Implemented a major feature to be added into the main BMW mobile application with a software engineering team comprised of 8 people. Developed this feature in Angular 4 with Test-Driven Development. Improved 3 different micro-services for the major feature using ExpressJS. Designed and developed the end-to-end automated testing library for the major feature. Pioneered and created an automated testing stack to run automated tests on both iOS and Android simultaneously using Protractor and Appium."
+    description: "Implemented a major feature to be added into the main BMW mobile application with a software engineering team comprised of 8 people. Developed this feature in Angular 4 with Test-Driven Development. Improved 3 different micro-services for the major feature using ExpressJS. Designed and developed the end-to-end automated testing library for the major feature. Pioneered and created an automated testing stack to run automated tests on both iOS and Android simultaneously using Protractor and Appium.",
+    tags: ["TypeScript", "Angular 4+", "NodeJS", "Protractor", "Appium", "Jasmine", "Selenium", "PostgreSQL", "ExpressJS", "Docker"]
   },
   {
     title: "Virtual Reality Research",
@@ -51,7 +61,8 @@ sendExperiences([
     startDate: "January 2018",
     endDate: "May 2018",
     color: "#F66733",
-    description: "Designed a way to sync data coming from bio-pack systems and the virtual reality experience in order to measure and hypothesize based on the data recorded. Coordinated with the project leads on which virtual reality experience will be most effective to relax the patient undergoing surgery."
+    description: "Designed a way to sync data coming from bio-pack systems and the virtual reality experience in order to measure and hypothesize based on the data recorded. Coordinated with the project leads on which virtual reality experience will be most effective to relax the patient undergoing surgery.",
+    tags: ["OBS", "Excel", "BioPack"]
   },
   {
     title: "BMW Digital and Mobile Co-op",
@@ -59,7 +70,8 @@ sendExperiences([
     startDate: "May 2018",
     endDate: "Present",
     color: "#0089FF",
-    description: ""
+    description: "",
+    tags: ["Protractor", "PostgreSQL", "Cypress"]
   }
 ]);
 sendSkillsLanguages([
@@ -78,6 +90,8 @@ sendSkillsLanguages([
 sendSkillsFramewors([
   {name: "Protractor", stars: 5},
   {name: "Appium", stars: 5},
+  {name: "Jasmine", stars: 5},
+  {name: "Selenium", stars: 4.5},
   {name: "Angular 4", stars: 4},
   {name: "ExpressJS", stars: 3.5},
   {name: "NodeJS", stars: 3.5},
