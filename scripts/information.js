@@ -101,6 +101,7 @@ sendSkillsTools([
   {name: "Bash", stars: 4.5},
   {name: "Git", stars: 4.5},
   {name: "Adobe Xd", stars: 4.5},
+  {name: "Atlassian Suite", stars: 4.0},
   {name: "Postman", stars: 3.5},
   {name: "AWS", stars: 2.5},
   {name: "Unity", stars: 2.5}
@@ -127,7 +128,9 @@ sendHobbieImg([
   "sandiego.jpg",
   "sandiegocliffs.jpg",
   "riverbanks.jpg",
-  "trophies.jpg"
+  "trophies.jpg",
+  "crazyTrumpets.jpg",
+  "baldy.jpg"
 ]);
 sendAwards([
   ["Eagle Scout", "Boy Souts of America", "Troop 95", "Irmo, SC", "June 2015"],
