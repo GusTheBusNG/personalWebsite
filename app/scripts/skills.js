@@ -1,8 +1,8 @@
 var ratingToImageTable = ["", "", "", "", "",
   "img/2.5-stars.png",
   "img/3-stars.png",
-  "img/3.5-stars.jpeg",
-  "img/4-stars.jpeg",
+  "img/3.5-stars.png",
+  "img/4-stars.png",
   "img/4.5-stars.png",
   "img/5-stars.jpeg"
 ];

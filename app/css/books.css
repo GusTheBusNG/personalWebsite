@@ -54,26 +54,26 @@
 
 
 .bookCover#bornToRun {
-  background-image: url('../img/bornToRun.png.jpeg');
+  background-image: url('../img/bornToRun.jpeg');
 }
 
 .bookCover#habit {
-  background-image: url('../img/habit.png.jpeg');
+  background-image: url('../img/habit.jpeg');
 }
 
 .bookCover#richDadPoorDad {
-  background-image: url('../img/richDadPoorDad.png.jpeg');
+  background-image: url('../img/richDadPoorDad.jpeg');
 }
 
 .bookCover#drive {
-  background-image: url('../img/drive.png.jpeg');
+  background-image: url('../img/drive.jpeg');
 }
 
 .bookCover#rulesForLife {
-  background-image: url('../img/12RulesForLife.png.jpeg');
+  background-image: url('../img/12RulesForLife.jpeg');
 }
 
 .bookCover#steveJobs {
   background-position: 50% 50%;
-  background-image: url('../img/steveJobs.png.jpeg');
+  background-image: url('../img/steveJobs.jpeg');
 }

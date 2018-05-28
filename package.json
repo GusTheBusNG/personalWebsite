@@ -1,0 +1,42 @@
+{
+  "name": "personalwebsite",
+  "version": "1.0.0",
+  "description": "Nicholas Gustafson's personal website",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GusTheBusNG/personalWebsite.git"
+  },
+  "keywords": [
+    "Nicholas",
+    "Gustafson",
+    "developer",
+    "software",
+    "engineer",
+    "code",
+    "tester",
+    "automation"
+  ],
+  "author": "Nicholas Gustafson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GusTheBusNG/personalWebsite/issues"
+  },
+  "homepage": "https://github.com/GusTheBusNG/personalWebsite#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^1.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-useref": "^3.1.5",
+    "run-sequence": "^2.2.1"
+  }
+}
