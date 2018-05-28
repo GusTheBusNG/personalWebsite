@@ -14,7 +14,7 @@ function sendAwards(awards) {
 
 function addNewRow() {
   awardsContainer.innerHTML +=
-    "<div class=\"awardRow\"></div><div class=\"triangleContainer\"></div>";
+    "<div class=\"awardRow\"></div>";
   awardsRow = document.getElementsByClassName("awardRow")[numberOfAwardsRow];
 }
 

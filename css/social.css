@@ -157,12 +157,8 @@
     align-items: center;
   }
 
-  .resumeContainer {
-    width: 100%;
-  }
-
-  .mailContainer {
-    width: 100%;
+  .resumeAndMailContainer {
+      width: 100%;
   }
 
   .socialLinksContainer {
