@@ -25,7 +25,7 @@ gulp.task('watch', function (){
 
 gulp.task('build', function (callback) {
   runSequence('clean:dist',
-    ['useref', 'images'],
+    ['useref'/*, 'images'*/],
     callback
   );
 });
