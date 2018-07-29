@@ -17,45 +17,45 @@ gulp.task('default', function (callback) {
   );
 });
 
-gulp.task('watch', function (){
-  gulp.watch('app/*.html', browserSync.reload);
-  gulp.watch('app/js/*.js', browserSync.reload);
-  gulp.watch('app/css/*.css', browserSync.reload);
+gulp.task('watch', function () {
+  gulp.watch('src/*.html', browserSync.reload);
+  gulp.watch('src/js/*.js', browserSync.reload);
+  gulp.watch('src/css/*.css', browserSync.reload);
 });
 
 gulp.task('build', function (callback) {
-  runSequence('clean:dist',
+  runSequence('clean:prod',
     ['useref'/*, 'images'*/],
     callback
   );
 });
 
-gulp.task('browserSync', function() {
+gulp.task('browserSync', function () {
   browserSync.init({
     server: {
-      baseDir: 'app'
+      baseDir: 'src'
     },
   });
 });
 
-gulp.task('useref', function(){
-  return gulp.src('app/*.html')
+gulp.task('useref', function () {
+  return gulp.src('src/*.html')
     .pipe(useref())
     .pipe(gulpIf('*.js', uglify()))
     .pipe(gulpIf('*.css', cssnano()))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('prod'));
 });
 
-gulp.task('images', function(){
-  return gulp.src('app/img/*.+(png|jpg|jpeg|gif|svg)')
+gulp.task('images', function () {
+  return gulp.src('src/img/*.+(png|jpg|jpeg|gif|svg)')
     .pipe(cache(imagemin({
       interlaced: true
     })))
-    .pipe(gulp.dest('dist/img'));
+    .pipe(gulp.dest('prod/img'));
 });
 
-gulp.task('clean:dist', function() {
-  return del.sync('dist');
+gulp.task('clean:prod', function () {
+  return del.sync('prod');
 });
 
 gulp.task('cache:clear', function (callback) {
