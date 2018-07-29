@@ -1,0 +1,167 @@
+.resumeAndSocialLinks {
+  display: flex;
+  position: relative;
+  height: 40vh;
+  width: 100vw;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.resumeAndMailContainer {
+  display: flex;
+  position: relative;
+  height: 100%;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.resumeContainer {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.mailContainer {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.statement {
+  display: flex;
+  position: relative;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.link {
+  display: flex;
+  position: relative;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  margin: .5rem;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.statement#link {
+  box-shadow: 0px 5px #0089FF;
+  top: -.2rem;
+}
+
+.socialLinksContainer {
+  display: flex;
+  position: relative;
+  height: 100%;
+  width: 50%;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialLink {
+  display: flex;
+  position: relative;
+  height: 20vh;
+  width: 25vw;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 500ms ease-in-out;
+  cursor: pointer;
+}
+
+.socialIcon {
+  display: flex;
+  position: relative;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: transparent;
+}
+
+.socialLink:hover#gitHub {
+  background-color: black;
+}
+
+.socialLink:hover#linkedIn {
+  background-color: #0077B5;
+}
+
+.socialLink:hover#facebook {
+  background-color: #3B59AF;
+}
+
+.socialLink:hover#instagram {
+  background-color: #E1306C;
+}
+
+.socialIcon#git {
+  background-image: url('../img/github.png');
+}
+
+.socialIcon#linked {
+  height: 4rem;
+  width: 4rem;
+  background-image: url('../img/linkedin.png');
+}
+
+.socialIcon#face {
+  background-image: url('../img/facebook.png');
+}
+
+.socialIcon#insta {
+  background-image: url('../img/instagram.png');
+}
+
+.shakeAnimation {
+  animation-name: shake;
+  animation-duration: 300ms;
+  animation-delay: 0s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 5;
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+}
+
+@keyframes shake {
+  0% {
+    top: 0;
+  }
+  33% {
+    top: 10px;
+  }
+  66% {
+    top: 0;
+  }
+  100% {
+    top: -10px;
+  }
+}
+
+@media (max-width: 701px) {
+  .resumeAndSocialLinks {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .resumeAndMailContainer {
+      width: 100%;
+  }
+
+  .socialLinksContainer {
+    width: 100%;
+  }
+}

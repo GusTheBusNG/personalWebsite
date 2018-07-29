@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Nicholas Gustafson</title>
+  <!-- build:css css/main.css -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/timeline.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="css/awards.css">
+  <link rel="stylesheet" href="css/education.css">
+  <link rel="stylesheet" href="css/hobbies.css">
+  <link rel="stylesheet" href="css/social.css">
+  <link rel="stylesheet" href="css/books.css">
+  <!-- endbuild -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <link rel="icon" href="./img/favicon.png" type="image/gif" sizes="16x16">
+  <meta name="description" content="Nicholas Gustafson's Personal Website">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <meta name="author" content="Nicholas Gustafson">
+  <meta name="keywords" content="Nicholas, Gustafson, software, engineer, code, developer, tester, automation">
+</head>
+
+<body>
+  <div class="firstPage">
+    <div class="quoteWrapper" id="upperQuote">
+      <p class="quote"></p>
+    </div>
+    <div class="bar" id="upperBar"></div>
+    <div class="centerRow">
+      <div class="arrowWrapper" id="leftArrowWrapper" onclick="leftArrowClicked()">
+        <span class="arrow" id="leftArrow">&#10094;</span>
+      </div>
+      <div class="titleTextWrapper">
+        <h1 class="titleText">Hi! I'm Nick
+          <img class="profileImg" hspace="20" src="img/Nick_Gustafson.png">
+        </h1>
+      </div>
+      <div class="arrowWrapper" id="rightArrowWrapper" onclick="rightArrowClicked()">
+        <span class="arrow" id="rightArrow">&#10095;</span>
+      </div>
+
+      <div class="arrowsContainer mobileOnly">
+        <div class="arrowWrapper mobileOnly" id="leftArrowWrapper" onclick="leftArrowClicked()">
+          <span class="arrow" id="leftArrow">&#10094;</span>
+        </div>
+        <div class="arrowWrapper mobileOnly" id="rightArrowWrapper" onclick="rightArrowClicked()">
+          <span class="arrow" id="rightArrow">&#10095;</span>
+        </div>
+      </div>
+    </div>
+    <div class="bar" id="lowerBar"></div>
+    <div class="quoteWrapper" id="lowerQuote">
+      <p class="quote"></p>
+    </div>
+  </div>
+
+  <div class="pageTitleContainer">
+    <h1 class="pageTitle">Software Experience 👨‍💻</h1>
+  </div>
+  <div class="timeline">
+  </div>
+
+  <div class="pageTitleContainer" id="skills">
+    <h1 class="pageTitle" id="skillsTitle">Skills‍
+      <img class="logo" hspace="20" src="img/javascriptLogo.png">
+    </h1>
+  </div>
+  <div class="skillsContainer">
+    <div class="skillsColumnContainer">
+      <h2 class="skillType">Languages</h2>
+      <div class="skillTypeContentContainer" id="firstSkillColumn">
+        <div class="skillBar"></div>
+        <div class="skills" id="languageSkills">
+        </div>
+        <div class="ratingsContainer" id="languageRatings">
+        </div>
+      </div>
+    </div>
+    <div class="skillsColumnContainer">
+      <h2 class="skillType">Frameworks / Libraries</h2>
+      <div class="skillTypeContentContainer" id="secondSkillColumn">
+        <div class="skillBar"></div>
+        <div class="skills" id="frameworkSkills">
+        </div>
+        <div class="ratingsContainer" id="frameworkRatings">
+        </div>
+      </div>
+    </div>
+    <div class="skillsColumnContainer">
+      <h2 class="skillType">Tools</h2>
+      <div class="skillTypeContentContainer" id="thirdSkillColumn">
+        <div class="skillBar"></div>
+        <div class="skills" id="toolSkills">
+        </div>
+        <div class="ratingsContainer" id="toolRatings">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pageTitleContainer" id="awards">
+    <h1 class="pageTitle" id="awardsTitle">🏆 Achievements / Awards 🥇</h1>
+  </div>
+  <div class="awardRowContainer">
+    <div class="awardRow">
+    </div>
+  </div>
+
+  <div class="pageTitleContainer" id="education">
+    <h1 class="pageTitle" id="educationTitle">Education
+      <img class="logo" hspace="20" src="img/clemsonPaw.png">
+    </h1>
+  </div>
+  <div class="educationContainer">
+    <div class="educationOverviewContainer">
+      <div class="sectionTitleContainer">
+        <h2 class="sectionTitle">Clemson University</h2>
+      </div>
+      <div class="horizontalBarContainer">
+        <div class="horizontalBar"></div>
+      </div>
+      <div class="majorAndGPAContainer">
+        <div class="majorContainer">
+          <h3 class="major">Bachelor of Science in
+            <span class="highlightOrange">Computer Science</span>
+          </h3>
+          <h4 class="minor">Minor in
+            <span class="highlightOrange">Business Administration</span>
+          </h4>
+        </div>
+        <div class="GPAContainer">
+          <h3 class="GPA">Fall 2020</h3>
+          <h3 class="GPA">GPA in Major:
+            <span class="highlightBlue">4.00/4.00</span>
+          </h3>
+          <h3 class="GPA">Overall GPA:
+            <span class="highlightBlue">3.94/4.00</span>
+          </h3>
+        </div>
+      </div>
+    </div>
+    <div class="sectionTitleContainer">
+      <h2 class="sectionTitle">Notable Courses</h2>
+    </div>
+    <div class="horizontalBarContainer">
+      <div class="horizontalBar"></div>
+    </div>
+    <div class="notableCoursesContainer">
+      <table id="notableCoursesTable">
+      </table>
+    </div>
+  </div>
+
+  <div class="pageTitleContainer">
+    <h1 class="pageTitle">Books 📖</h1>
+  </div>
+  <div class="booksContainer">
+    <div class="book">
+      <div class="bookCover" id="bornToRun">
+      </div>
+      <div class="titleAndAuthorContainer">
+        <h2 class="title">Born To Run</h2>
+        <h3 class="author">Christopher McDougall</h3>
+      </div>
+    </div>
+    <div class="book">
+      <div class="bookCover" id="habit">
+      </div>
+      <div class="titleAndAuthorContainer">
+        <h2 class="title">The Power of Habit</h2>
+        <h3 class="author">Charles Duhigg</h3>
+      </div>
+    </div>
+    <div class="book">
+      <div class="bookCover" id="richDadPoorDad">
+      </div>
+      <div class="titleAndAuthorContainer">
+        <h2 class="title">Rich Dad Poor Dad</h2>
+        <h3 class="author">Robert T. Kiyosaki</h3>
+      </div>
+    </div>
+    <div class="book">
+      <div class="bookCover" id="drive">
+      </div>
+      <div class="titleAndAuthorContainer">
+        <h2 class="title">Drive</h2>
+        <h3 class="author">Daniel H. Pink</h3>
+      </div>
+    </div>
+    <div class="book">
+      <div class="bookCover" id="rulesForLife">
+      </div>
+      <div class="titleAndAuthorContainer">
+        <h2 class="title">12 Rules For Life</h2>
+        <h3 class="author">Jordan B. Peterson</h3>
+      </div>
+    </div>
+    <div class="book">
+      <div class="bookCover" id="steveJobs">
+      </div>
+      <div class="titleAndAuthorContainer">
+        <h2 class="title">Steve Jobs</h2>
+        <h3 class="author">Walter Isaacson</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="resumeAndSocialLinks">
+    <div class="resumeAndMailContainer">
+      <div class="resumeContainer">
+        <h3 class="statement">Let's check out my</h3>
+        <a class="link" href="./docs/officialResume.pdf" target="_blank" onmouseover="shakeResumeEmoji()">
+          <h3 class="statement" id="link">Official Resume</h3>
+        </a>
+        <h3 class="statement" id="resumeEmoji">🤙</h3>
+      </div>
+      <div class="mailContainer">
+        <h3 class="statement">Let's talk!</h3>
+        <a class="link" href="mailto:nichgus7@gmail.com" onmouseover="shakeMailEmoji()">
+          <h3 class="statement" id="link">nichgus7@gmail.com</h3>
+        </a>
+        <h3 class="statement" id="mailEmoji">👍</h3>
+      </div>
+    </div>
+    <div class="socialLinksContainer">
+      <a href="https://github.com/gusthebusng" target="_blank">
+        <div class="socialLink" id="gitHub">
+          <div class="socialIcon" id="git"></div>
+        </div>
+      </a>
+      <a href="https://www.linkedin.com/in/nicholas-gustafson" target="_blank">
+        <div class="socialLink" id="linkedIn">
+          <div class="socialIcon" id="linked"></div>
+        </div>
+      </a>
+      <a href="https://www.facebook.com/nicholas.gustafson.14" target="_blank">
+        <div class="socialLink" id="facebook">
+          <div class="socialIcon" id="face"></div>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/nicholasgustafson/" target="_blank">
+        <div class="socialLink" id="instagram">
+          <div class="socialIcon" id="insta"></div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="pageTitleContainer" id="hobbies">
+    <h1 class="pageTitle" id="hobbiesTitle">🏊 🎺 What I do when I’m not at my computer 🧗‍♂️ ⚽</h1>
+  </div>
+  <div class="hobbieContainer">
+    <div class="hobbieRowContainer">
+      <div class="hobbieImg"></div>
+    </div>
+    <div class="hobbieRowContainer">
+    </div>
+    <div class="hobbieRowContainer">
+    </div>
+  </div>
+</body>
+
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!--build:js js/main.js -->
+<script src="scripts/homePage.js"></script>
+<script src="scripts/timeline.js"></script>
+<script src="scripts/scorllingControls.js"></script>
+<script src="scripts/skills.js"></script>
+<script src="scripts/awards.js"></script>
+<script src="scripts/notableCourses.js"></script>
+<script src="scripts/social.js"></script>
+<script src="scripts/hobbies.js"></script>
+<script src="scripts/information.js"></script>
+<!-- endbuild -->

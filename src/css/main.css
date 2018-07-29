@@ -1,0 +1,412 @@
+body {
+  margin: 0rem;
+  font-family: Dosis;
+}
+
+body::before {
+  display: none;
+}
+
+@media (max-width: 920px) {
+  body::before {
+    content: "true";
+  }
+}
+
+@media (max-height: 900px) {
+  body::before {
+    content: "true";
+  }
+}
+
+.firstPage {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* blue bar, and bar movements */
+
+.bar {
+  display: flex;
+  position: relative;
+  height: .35rem;
+  width: 45%;
+  background-color: #0089FF;
+  transition: transform 500ms ease-in-out;
+}
+
+.widen {
+  animation-name: widen;
+  animation-duration: 500ms;
+  animation-delay: 0s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.moveDown {
+  transform: translate(0, 20.35rem);
+}
+
+.moveUp {
+  transform: translate(0, -20.35rem);
+}
+
+.moveToTop {
+  transform: translate(0, -13rem);
+}
+
+.moveToBottom {
+  transform: translate(0, 13rem);
+}
+
+@keyframes widen {
+  0% {
+    width: 45%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+/* title text, fadin, fadout, and profileimg */
+
+.centerRow {
+  display: flex;
+  position: relative;
+  height: 10rem;
+  width: 100vw;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.titleTextWrapper {
+  display: flex;
+  position: relative;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleText {
+  display: flex;
+  position: relative;
+  color: #F66733;
+  font-size: 5rem;
+  text-align: center;
+  opacity: 0;
+  margin: 0;
+}
+
+.whySoftwareExplination {
+  position: relative;
+  display: flex;
+  font-size: 2rem;
+  text-align: center;
+  opacity: 0;
+  margin: 0;
+}
+
+.arrowsContainer {
+  display: none;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.arrowWrapper {
+  display: flex;
+  position: relative;
+  border-style: solid;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  justify-content: center;
+  align-items: center;
+  color: #707070;
+  opacity: 0;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.arrow {
+  display: flex;
+  position: relative;
+  font-size: 5rem;
+  top: -.17rem;
+  color: #707070;
+}
+
+#leftArrow {
+  left: -.3rem;
+}
+
+#rightArrow {
+  left: .3rem;
+}
+
+.fadeInAnimaiton {
+  animation-name: fadeIn;
+  animation-duration: 500ms;
+  animation-delay: 0s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.fadeOutAnimaiton {
+  animation-name: fadeOut;
+  animation-duration: 500ms;
+  animation-delay: 0s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.profileImg {
+  height: 6rem;
+  width: 6rem;
+}
+
+/* Quote styling */
+
+.quoteWrapper {
+  display: flex;
+  position: relative;
+  height: 17vh;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote {
+  position: relative;
+  display: flex;
+  opacity: 1;
+  font-size: 2rem;
+  text-align: center;
+  color: #707070;
+  margin: 0;
+}
+
+@media (max-width: 1300px) {
+  .centerRow {
+    height: 11rem;
+  }
+
+  .moveDown {
+    transform: translate(0, 21.35rem);
+  }
+
+  .moveUp {
+    transform: translate(0, -21.35rem);
+  }
+}
+
+@media (max-width: 1100px) and (min-height: 900px){
+  .centerRow {
+    height: 14rem;
+  }
+
+  .moveDown {
+    transform: translate(0, 24.35rem);
+  }
+
+  .moveUp {
+    transform: translate(0, -24.35rem);
+  }
+
+  .moveToTop {
+    transform: translate(0, -14rem);
+  }
+
+  .moveToBottom {
+    transform: translate(0, 14rem);
+  }
+}
+
+@media (max-width: 745px) {
+  .centerRow {
+    height: 20rem;
+  }
+
+  .moveDown {
+    transform: translate(0, 30.35rem);
+  }
+
+  .moveUp {
+    transform: translate(0, -30.35rem);
+  }
+
+  .moveToTop {
+    transform: translate(0, -12rem);
+  }
+
+  .moveToBottom {
+    transform: translate(0, 12rem);
+  }
+}
+
+@media (max-width: 640px) {
+  .quoteWrapper {
+    display: none;
+  }
+
+  .centerRow {
+    flex-direction: column;
+    height: 35rem;
+    margin: 0rem;
+  }
+
+  .arrowWrapper {
+    display: none;
+  }
+
+  .arrowsContainer.mobileOnly {
+    display: flex;
+  }
+
+  .arrowWrapper.mobileOnly {
+    display: flex;
+    border: none;
+  }
+
+  .titleTextWrapper {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    width: 90vw;
+  }
+
+  .moveDown {
+    transform: translate(0, 40.35rem);
+  }
+
+  .moveUp {
+    transform: translate(0, -40.35rem);
+  }
+
+  .moveToTop {
+    transform: translate(0, 0rem);
+  }
+
+  .moveToBottom {
+    transform: translate(0, 1.5rem);
+  }
+
+  .titleText {
+    font-size: 3.5rem;
+  }
+
+  .whySoftwareExplination {
+    font-size: 1.65rem;
+  }
+}
+
+@media (max-height: 760px) and (min-height: 920px) {
+  .moveToTop {
+    transform: translate(0, -10rem);
+  }
+
+  .moveToBottom {
+    transform: translate(0, 10rem);
+  }
+}
+
+@media (max-height: 700px) {
+  .quoteWrapper {
+    display: none;
+  }
+}
+
+@media (max-height: 500px) and (min-width: 1060px){
+  .moveToTop {
+    transform: translate(0, -1rem);
+  }
+
+  .moveToBottom {
+    transform: translate(0, 1rem);
+  }
+}
+
+@media (max-height: 500px) and (min-width: 560px){
+  .moveToTop {
+    transform: translate(0, -3rem);
+  }
+
+  .moveToBottom {
+    transform: translate(0, 3rem);
+  }
+}
+
+@media (max-height: 690px) and (max-width: 890px) and (min-width: 640px){
+  .moveToTop {
+    transform: translate(0, -5rem);
+  }
+
+  .moveToBottom {
+    transform: translate(0, 5rem);
+  }
+}
+
+
+@media (max-width: 900px) and (max-height: 900px) {
+  .quoteWrapper {
+    display: none;
+  }
+}
+
+@media (min-width: 890px) and (max-height: 700px) {
+  .moveToTop {
+    transform: translate(0, -3rem);
+  }
+
+  .moveToBottom {
+    transform: translate(0, 3rem);
+  }
+}
+
+@media (max-width: 461px) and (max-height: 641px) {
+  .bar {
+    display: none;
+  }
+
+  .whySoftwareScript {
+    height: 75vh;
+  }
+
+  .arrowsContainer.mobileOnly {
+    top: 3rem;
+  }
+}
