@@ -9,8 +9,6 @@ var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
 
-// gulp.watch('files-to-watch', ['tasks', 'to', 'run']);
-
 gulp.task('default', function (callback) {
   runSequence(['browserSync', 'watch'],
     callback
@@ -18,9 +16,11 @@ gulp.task('default', function (callback) {
 });
 
 gulp.task('watch', function () {
-  gulp.watch('src/*.html', browserSync.reload);
-  gulp.watch('src/js/*.js', browserSync.reload);
-  gulp.watch('src/css/*.css', browserSync.reload);
+  const mainFiles = ['src/*.html', 'src/scripts/*.js', 'src/css/*.css'];
+
+  gulp.watch(mainFiles).on('change', function () {
+    browserSync.reload();
+  });
 });
 
 gulp.task('build', function (callback) {

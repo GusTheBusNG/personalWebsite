@@ -1,18 +1,18 @@
 var floppingImagesStarted = false;
 
-$(window).on("load", function() {
-  $(window).scroll(function() {
+$(window).on("load", function () {
+  $(window).scroll(function () {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-    $(".pageTitle").each(function() {
-      var titleBottom = $(this).offset().top + $(this).outerHeight();
+    $(".pageTitle").each(function () {
+      var titleBottom = $(this).offset().top + $(this).outerHeight() * 2;
 
       if ($(this).css("opacity") == 0 && titleBottom < windowBottom) {
-        $(this).fadeTo(500,1);
+        $(this).toggleClass("fadeInAndUp");
       }
     });
 
-    $(".experience").each(function() {
-      var experienceContainer = $(this).offset().top + ($(this).outerHeight()/4);
+    $(".experience").each(function () {
+      var experienceContainer = $(this).offset().top + ($(this).outerHeight() / 4);
 
       if (experienceContainer < windowBottom) {
         if ($(this).css("opacity") == 0) {
@@ -21,8 +21,8 @@ $(window).on("load", function() {
       }
     });
 
-    $(".experienceDurationBar").each(function(i) {
-      var experienceContainer = $(this).offset().top + ($(".experienceDurationContainer").outerHeight()*.3);
+    $(".experienceDurationBar").each(function (i) {
+      var experienceContainer = $(this).offset().top + ($(".experienceDurationContainer").outerHeight() * .3);
 
       if (experienceContainer < windowBottom) {
         if ($(this).css("height") == "0px") {
@@ -37,8 +37,8 @@ $(window).on("load", function() {
       }
     });
 
-    $(".skillBar").each(function() {
-      var skillBar = $(this).offset().top + ($(this).outerHeight()*.2);
+    $(".skillBar").each(function () {
+      var skillBar = $(this).offset().top + ($(this).outerHeight() * .2);
 
       if (skillBar < windowBottom) {
         if ($(this).css("height") == "0px") {
@@ -50,8 +50,8 @@ $(window).on("load", function() {
       }
     });
 
-    $(".award").each(function(i) {
-      var awardContainer = $(this).offset().top + ($(this).outerHeight()*.2);
+    $(".award").each(function (i) {
+      var awardContainer = $(this).offset().top + ($(this).outerHeight() * .2);
 
       if (awardContainer < windowBottom) {
         if ($(this).css("opacity") == 0) {
@@ -60,8 +60,8 @@ $(window).on("load", function() {
       }
     });
 
-    $(".horizontalBar").each(function() {
-      var horizontalBar = $(this).offset().top + ($(this).outerHeight()*2);
+    $(".horizontalBar").each(function () {
+      var horizontalBar = $(this).offset().top + ($(this).outerHeight() * 2);
 
       if (horizontalBar < windowBottom) {
         if ($(this).css("width") == "0px") {
@@ -70,8 +70,8 @@ $(window).on("load", function() {
       }
     });
 
-    $(".majorContainer").each(function() {
-      var majorContainer = $(this).offset().top + ($(this).outerHeight()*.4);
+    $(".majorContainer").each(function () {
+      var majorContainer = $(this).offset().top + ($(this).outerHeight() * .4);
 
       if (majorContainer < windowBottom) {
         if ($(this).css("opacity") == 0) {
@@ -80,8 +80,8 @@ $(window).on("load", function() {
       }
     });
 
-    $(".GPAContainer").each(function() {
-      var GPAContainer = $(this).offset().top + ($(this).outerHeight()*.4);
+    $(".GPAContainer").each(function () {
+      var GPAContainer = $(this).offset().top + ($(this).outerHeight() * .4);
 
       if (GPAContainer < windowBottom) {
         if ($(this).css("opacity") == 0) {
@@ -90,8 +90,8 @@ $(window).on("load", function() {
       }
     });
 
-    $(".notableCoursesContainer").each(function() {
-      var notableCoursesContainer = $(this).offset().top + ($(this).outerHeight()*.2);
+    $(".notableCoursesContainer").each(function () {
+      var notableCoursesContainer = $(this).offset().top + ($(this).outerHeight() * .2);
 
       if (notableCoursesContainer < windowBottom) {
         if ($(this).css("opacity") == 0) {
@@ -100,7 +100,7 @@ $(window).on("load", function() {
       }
     });
 
-    $(".hobbieContainer").each(function() {
+    $(".hobbieContainer").each(function () {
       var hobbieContainer = $(this).offset().top;
 
       if (!floppingImagesStarted && hobbieContainer < windowBottom) {

@@ -40,41 +40,6 @@ body::before {
   transition: transform 500ms ease-in-out;
 }
 
-.widen {
-  animation-name: widen;
-  animation-duration: 500ms;
-  animation-delay: 0s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-}
-
-.moveDown {
-  transform: translate(0, 20.35rem);
-}
-
-.moveUp {
-  transform: translate(0, -20.35rem);
-}
-
-.moveToTop {
-  transform: translate(0, -13rem);
-}
-
-.moveToBottom {
-  transform: translate(0, 13rem);
-}
-
-@keyframes widen {
-  0% {
-    width: 45%;
-  }
-  100% {
-    width: 80%;
-  }
-}
-
 /* title text, fadin, fadout, and profileimg */
 
 .centerRow {
@@ -153,46 +118,6 @@ body::before {
 
 #rightArrow {
   left: .3rem;
-}
-
-.fadeInAnimaiton {
-  animation-name: fadeIn;
-  animation-duration: 500ms;
-  animation-delay: 0s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-}
-
-.fadeOutAnimaiton {
-  animation-name: fadeOut;
-  animation-duration: 500ms;
-  animation-delay: 0s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    visibility: visible;
-  }
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
 }
 
 .profileImg {

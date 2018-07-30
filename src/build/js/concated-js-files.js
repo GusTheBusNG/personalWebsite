@@ -22,7 +22,7 @@ function addAward(award) {
   awardsRow.innerHTML += "<div class=\"award\">" +
     triangle +
     addAwardDescriptions(award) +
-  "</div>";
+    "</div>";
 }
 
 function addAwardDescriptions(award) {
@@ -115,7 +115,7 @@ function flopRandomImage(rowImageIndex) {
   var randomHobbieIndex = rowImageIndex || getRandomIndex();
   if (this.rowImageIndex == randomHobbieIndex) {
     // replacing a row image with 2 or 3 different regular images
-    setTimeout(function() {
+    setTimeout(function () {
       hobbies[randomHobbieIndex].style.visibility = "hidden";
       hobbies[randomHobbieIndex].outerHTML = makeHobbieImagesToReplaceRowImage();
       var replacedImgs = getImagesThatReplacedTheRowImage();
@@ -135,7 +135,7 @@ function flopRandomImage(rowImageIndex) {
       flopImages(true);
     }, 1000);
   } else {
-    setTimeout(function() {
+    setTimeout(function () {
       flopNewImage(randomHobbieIndex);
       flopImages(false);
     }, 1000);
@@ -168,7 +168,7 @@ function getIndexToStartReplacingWithRowImage() {
     }
   } else {
     while (counter++ <= 3 && (!((index + 3) % numberOfImagesPerRow == 0 ||
-            (index + 3) % numberOfImagesPerRow > index % numberOfImagesPerRow))) {
+      (index + 3) % numberOfImagesPerRow > index % numberOfImagesPerRow))) {
       index = getRandomIndex();
     }
   }
@@ -218,12 +218,12 @@ function makeHobbieImagesToReplaceRowImage(randomHobbieIndex) {
   if (numberOfImagesPerRow >= 3) {
     var index = Math.abs(Math.floor(Math.random() * hobbieImgs.length) - 2);
     return "<div class=\"hobbieImg\" id=\"1\" style=\"background-image: " + makeHobbieUrl(hobbieImgs[index++]) + ";\"></div>" +
-            "<div class=\"hobbieImg\" id=\"2\" style=\"background-image: " + makeHobbieUrl(hobbieImgs[index++]) + ";\"></div>" +
-            "<div class=\"hobbieImg\" id=\"3\" style=\"background-image: " + makeHobbieUrl(hobbieImgs[index]) + ";\"></div>";
+      "<div class=\"hobbieImg\" id=\"2\" style=\"background-image: " + makeHobbieUrl(hobbieImgs[index++]) + ";\"></div>" +
+      "<div class=\"hobbieImg\" id=\"3\" style=\"background-image: " + makeHobbieUrl(hobbieImgs[index]) + ";\"></div>";
   }
   var index = Math.abs(Math.floor(Math.random() * hobbieImgs.length) - 1);
   return "<div class=\"hobbieImg\" id=\"1\" style=\"background-image: " + makeHobbieUrl(hobbieImgs[index++]) + ";\"></div>" +
-          "<div class=\"hobbieImg\" id=\"2\" style=\"background-image: " + makeHobbieUrl(hobbieImgs[index]) + ";\"></div>"
+    "<div class=\"hobbieImg\" id=\"2\" style=\"background-image: " + makeHobbieUrl(hobbieImgs[index]) + ";\"></div>"
 }
 
 function makeHobbieUrl(hobbieImg) {
@@ -258,22 +258,22 @@ var canShowQuotes = false;
 
 fadeIn(titleText);
 
-setTimeout(function() {
+setTimeout(function () {
   moveUpperBarDown();
   changeTitleTextTo(introductionScript[0]);
 }, 1600);
 
-setTimeout(function() {
+setTimeout(function () {
   moveBarsUp();
   changeTitleTextTo(introductionScript[1]);
 }, 3200);
 
-setTimeout(function() {
+setTimeout(function () {
   moveBottomBarDown();
   changeTitleTextTo(introductionScript[2]);
 }, 4800);
 
-setTimeout(function() {
+setTimeout(function () {
   upperBar.classList.toggle("widen");
   upperBar.classList.toggle("moveToTop");
 
@@ -281,7 +281,7 @@ setTimeout(function() {
   lowerBar.classList.toggle("moveToBottom");
 
   fadeOut(titleText);
-  setTimeout(function() {
+  setTimeout(function () {
     titleText.classList.toggle("titleText");
     titleText.classList.toggle("whySoftwareExplination");
     titleText.innerHTML = whySoftwareScript[j];
@@ -289,7 +289,7 @@ setTimeout(function() {
     fadeIn(titleText);
   }, 500);
 
-  setTimeout(function() {
+  setTimeout(function () {
     upperQuote.innerHTML = quoteScript[i];
     fadeIn(upperQuote);
     lowerQuote.innerHTML = quoteScript[++i];
@@ -345,7 +345,7 @@ function setNewQuotes(firstIndex, secondIndex) {
   fadeOut(upperQuote);
   fadeOut(lowerQuote);
 
-  setTimeout(function() {
+  setTimeout(function () {
     upperQuote.innerHTML = quoteScript[firstIndex];
     fadeIn(upperQuote);
 
@@ -356,7 +356,7 @@ function setNewQuotes(firstIndex, secondIndex) {
 
 function changeTitleTextTo(message) {
   fadeOut(titleText);
-  setTimeout(function() {
+  setTimeout(function () {
     titleText.innerHTML = message;
     if (titleText.classList.contains("titleText")) {
       switchTextColors();
@@ -546,44 +546,44 @@ sendExperiences([
   }
 ]);
 sendSkillsLanguages([
-  {name: "TypeScript", stars: 5},
-  {name: "JavaScript", stars: 4.5},
-  {name: "Java", stars: 4},
-  {name: "C++", stars: 4},
-  {name: "C", stars: 4},
-  {name: "HTML", stars: 4},
-  {name: "CSS", stars: 4},
-  {name: "PHP", stars: 3.5},
-  {name: "MySQL", stars: 3.5},
-  {name: "PostgreSQL", stars: 3},
-  {name: "ARM", stars: 3}
+  { name: "TypeScript", stars: 5 },
+  { name: "JavaScript", stars: 4.5 },
+  { name: "Java", stars: 4 },
+  { name: "C++", stars: 4 },
+  { name: "C", stars: 4 },
+  { name: "HTML", stars: 4 },
+  { name: "CSS", stars: 4 },
+  { name: "PHP", stars: 3.5 },
+  { name: "MySQL", stars: 3.5 },
+  { name: "PostgreSQL", stars: 3 },
+  { name: "ARM", stars: 3 }
 ]);
 sendSkillsFramewors([
-  {name: "Protractor", stars: 5},
-  {name: "Appium", stars: 5},
-  {name: "Jasmine", stars: 5},
-  {name: "Selenium", stars: 4.5},
-  {name: "Angular 4", stars: 4},
-  {name: "ExpressJS", stars: 3.5},
-  {name: "NodeJS", stars: 3.5},
-  {name: "Docker", stars: 3}
+  { name: "Protractor", stars: 5 },
+  { name: "Appium", stars: 5 },
+  { name: "Jasmine", stars: 5 },
+  { name: "Selenium", stars: 4.5 },
+  { name: "Angular 4", stars: 4 },
+  { name: "ExpressJS", stars: 3.5 },
+  { name: "NodeJS", stars: 3.5 },
+  { name: "Docker", stars: 3 }
 ]);
 sendSkillsTools([
-  {name: "Bash", stars: 4.5},
-  {name: "Git", stars: 4.5},
-  {name: "Adobe Xd", stars: 4.5},
-  {name: "Atlassian Suite", stars: 4.0},
-  {name: "Postman", stars: 3.5},
-  {name: "AWS", stars: 2.5},
-  {name: "Unity", stars: 2.5}
+  { name: "Bash", stars: 4.5 },
+  { name: "Git", stars: 4.5 },
+  { name: "Adobe Xd", stars: 4.5 },
+  { name: "Atlassian Suite", stars: 4.0 },
+  { name: "Postman", stars: 3.5 },
+  { name: "AWS", stars: 2.5 },
+  { name: "Unity", stars: 2.5 }
 ]);
 sendNotableCourses([
-  {title:"CPSC 2120 Algorithms and Data Structures", description:"Study of data structures and algorithms fundamental to computer science; abstract data-type concepts; measures of program running time and time complexity; algorithm analysis and design techniques."},
-  {title:"CPSC 3120 Introduction to Desgin and Analysis of Algorithms", description:"Topics include advanced data structures, amortized analysis, dynamic programming, graph algorithms, intractability and applications."},
-  {title:"CPSC 2150 Software Development Foundations", description: "Intensive study of software development foundations. Advanced coverage of programming language primitives, function-level design principles, and standard development and debugging tools. Introductory coverage of module-level design principles, program specification and reasoning principles, and validation and verification techniques."},
-  {title:"CPSC 3600 Networks and Network Programming", description:"Introduction to basic concepts of computer network technologies and network programming. Topics include network programming, layered protocol architectures, local and wide area networks, internetwork and intranetwork concepts, security. Socket level programming is introduced and used throughout the course."},
-  {title:"CPSC 2310 Introduction to Computer Organization", description: "Study of the machine architectures on which algorithms are implemented and requirements of architectures that support high-level languages, programming environments, and applications."},
-  {title:"CPSC 3720 Introduction Software Engineering", description:"Intensive introduction to software engineering. Focuses on each major phase of the software lifecycle. Introductory coverage of requirements analysis, requirements modeling, design modeling, and project management. Intermediate coverage of module-level design principles, program specification and reasoning principles, and program validation and verification techniques."}
+  { title: "CPSC 2120 Algorithms and Data Structures", description: "Study of data structures and algorithms fundamental to computer science; abstract data-type concepts; measures of program running time and time complexity; algorithm analysis and design techniques." },
+  { title: "CPSC 3120 Introduction to Desgin and Analysis of Algorithms", description: "Topics include advanced data structures, amortized analysis, dynamic programming, graph algorithms, intractability and applications." },
+  { title: "CPSC 2150 Software Development Foundations", description: "Intensive study of software development foundations. Advanced coverage of programming language primitives, function-level design principles, and standard development and debugging tools. Introductory coverage of module-level design principles, program specification and reasoning principles, and validation and verification techniques." },
+  { title: "CPSC 3600 Networks and Network Programming", description: "Introduction to basic concepts of computer network technologies and network programming. Topics include network programming, layered protocol architectures, local and wide area networks, internetwork and intranetwork concepts, security. Socket level programming is introduced and used throughout the course." },
+  { title: "CPSC 2310 Introduction to Computer Organization", description: "Study of the machine architectures on which algorithms are implemented and requirements of architectures that support high-level languages, programming environments, and applications." },
+  { title: "CPSC 3720 Introduction Software Engineering", description: "Intensive introduction to software engineering. Focuses on each major phase of the software lifecycle. Introductory coverage of requirements analysis, requirements modeling, design modeling, and project management. Intermediate coverage of module-level design principles, program specification and reasoning principles, and program validation and verification techniques." }
 ]);
 sendHobbieImgRow([
   "clemsonVsLousiville.jpg",
@@ -624,41 +624,41 @@ var notableCoursesTable = document.getElementById("notableCoursesTable");
 
 function sendNotableCourses(courses) {
   var i = 0;
-  for ( ; i + 1 < courses.length; i += 2) {
+  for (; i + 1 < courses.length; i += 2) {
     fillCourseTitle(courses, i);
     fillCourseDescription(courses, i);
   }
   if (courses.length % 2 !== 0) {
     notableCoursesTable.innerHTML +=
-    "<tr><th class=\"classTitle\">" + courses[i].title + "</th>/tr><tr><th class=\"classDescription\">" + courses[i].description + "</th></tr>";
+      "<tr><th class=\"classTitle\">" + courses[i].title + "</th>/tr><tr><th class=\"classDescription\">" + courses[i].description + "</th></tr>";
   }
 }
 
 function fillCourseTitle(courses, i) {
   notableCoursesTable.innerHTML +=
-  "<tr><th class=\"classTitle\">" + courses[i].title + "</th><th class=\"classTitle\">" + courses[++i].title + "</th></tr>";
+    "<tr><th class=\"classTitle\">" + courses[i].title + "</th><th class=\"classTitle\">" + courses[++i].title + "</th></tr>";
 }
 
 function fillCourseDescription(courses, i) {
   notableCoursesTable.innerHTML +=
-  "<tr><th class=\"classDescription\">" + courses[i].description + "</th><th class=\"classDescription\">" + courses[++i].description + "</th></tr>"
+    "<tr><th class=\"classDescription\">" + courses[i].description + "</th><th class=\"classDescription\">" + courses[++i].description + "</th></tr>"
 }
 
 var floppingImagesStarted = false;
 
-$(window).on("load", function() {
-  $(window).scroll(function() {
+$(window).on("load", function () {
+  $(window).scroll(function () {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-    $(".pageTitle").each(function() {
+    $(".pageTitle").each(function () {
       var titleBottom = $(this).offset().top + $(this).outerHeight();
 
       if ($(this).css("opacity") == 0 && titleBottom < windowBottom) {
-        $(this).fadeTo(500,1);
+        $(this).fadeTo(500, 1);
       }
     });
 
-    $(".experience").each(function() {
-      var experienceContainer = $(this).offset().top + ($(this).outerHeight()/4);
+    $(".experience").each(function () {
+      var experienceContainer = $(this).offset().top + ($(this).outerHeight() / 4);
 
       if (experienceContainer < windowBottom) {
         if ($(this).css("opacity") == 0) {
@@ -667,8 +667,8 @@ $(window).on("load", function() {
       }
     });
 
-    $(".experienceDurationBar").each(function(i) {
-      var experienceContainer = $(this).offset().top + ($(".experienceDurationContainer").outerHeight()*.3);
+    $(".experienceDurationBar").each(function (i) {
+      var experienceContainer = $(this).offset().top + ($(".experienceDurationContainer").outerHeight() * .3);
 
       if (experienceContainer < windowBottom) {
         if ($(this).css("height") == "0px") {
@@ -683,8 +683,8 @@ $(window).on("load", function() {
       }
     });
 
-    $(".skillBar").each(function() {
-      var skillBar = $(this).offset().top + ($(this).outerHeight()*.2);
+    $(".skillBar").each(function () {
+      var skillBar = $(this).offset().top + ($(this).outerHeight() * .2);
 
       if (skillBar < windowBottom) {
         if ($(this).css("height") == "0px") {
@@ -696,8 +696,8 @@ $(window).on("load", function() {
       }
     });
 
-    $(".award").each(function(i) {
-      var awardContainer = $(this).offset().top + ($(this).outerHeight()*.2);
+    $(".award").each(function (i) {
+      var awardContainer = $(this).offset().top + ($(this).outerHeight() * .2);
 
       if (awardContainer < windowBottom) {
         if ($(this).css("opacity") == 0) {
@@ -706,8 +706,8 @@ $(window).on("load", function() {
       }
     });
 
-    $(".horizontalBar").each(function() {
-      var horizontalBar = $(this).offset().top + ($(this).outerHeight()*2);
+    $(".horizontalBar").each(function () {
+      var horizontalBar = $(this).offset().top + ($(this).outerHeight() * 2);
 
       if (horizontalBar < windowBottom) {
         if ($(this).css("width") == "0px") {
@@ -716,8 +716,8 @@ $(window).on("load", function() {
       }
     });
 
-    $(".majorContainer").each(function() {
-      var majorContainer = $(this).offset().top + ($(this).outerHeight()*.4);
+    $(".majorContainer").each(function () {
+      var majorContainer = $(this).offset().top + ($(this).outerHeight() * .4);
 
       if (majorContainer < windowBottom) {
         if ($(this).css("opacity") == 0) {
@@ -726,8 +726,8 @@ $(window).on("load", function() {
       }
     });
 
-    $(".GPAContainer").each(function() {
-      var GPAContainer = $(this).offset().top + ($(this).outerHeight()*.4);
+    $(".GPAContainer").each(function () {
+      var GPAContainer = $(this).offset().top + ($(this).outerHeight() * .4);
 
       if (GPAContainer < windowBottom) {
         if ($(this).css("opacity") == 0) {
@@ -736,17 +736,17 @@ $(window).on("load", function() {
       }
     });
 
-    $(".notableCoursesContainer").each(function() {
-      var notableCoursesContainer = $(this).offset().top + ($(this).outerHeight()*.2);
+    $(".notableCoursesContainer").each(function () {
+      var notableCoursesContainer = $(this).offset().top + ($(this).outerHeight() * .2);
 
       if (notableCoursesContainer < windowBottom) {
         if ($(this).css("opacity") == 0) {
-          $(this).toggleClass("fadeInAndUp");
+          $(this).toggleClass("");
         }
       }
     });
 
-    $(".hobbieContainer").each(function() {
+    $(".hobbieContainer").each(function () {
       var hobbieContainer = $(this).offset().top;
 
       if (!floppingImagesStarted && hobbieContainer < windowBottom) {
@@ -767,7 +767,7 @@ var ratingToImageTable = ["", "", "", "", "",
 ];
 
 function findRatingPath(rating) {
-  return ratingToImageTable[rating*2];
+  return ratingToImageTable[rating * 2];
 }
 
 function makeSkill(item) {
@@ -854,27 +854,27 @@ function sendExperiences(experiences) {
 function makeExperience(experience) {
   timeline.innerHTML +=
     "<div class=\"experienceContainer " + getLeftOrRight() + "\">" +
-      "<div class=\"experience\" style=\"border-color: " + experience.color + ";\">" +
-        getExperienceDescriptionContainer(experience) +
-        getExperienceDurationContainer(experience) +
-      "</div>" +
+    "<div class=\"experience\" style=\"border-color: " + experience.color + ";\">" +
+    getExperienceDescriptionContainer(experience) +
+    getExperienceDurationContainer(experience) +
+    "</div>" +
     "</div>";
 }
 
 function getExperienceDescriptionContainer(experience) {
   return "<div class=\"experienceDescriptionContainer\">" +
-      makeExperienceTitle(experience.title) +
-      makeExperienceLocation(experience.location) +
-      makeExperienceDescription(experience.description) +
-      makeExperienceTags(experience.tags, experience.color) +
+    makeExperienceTitle(experience.title) +
+    makeExperienceLocation(experience.location) +
+    makeExperienceDescription(experience.description) +
+    makeExperienceTags(experience.tags, experience.color) +
     "</div>";
 }
 
 function getExperienceDurationContainer(experience) {
   return "<div class=\"experienceDurationContainer\">" +
-      makeExperienceDate(experience.startDate) +
-      "<div class=\"experienceDurationBar\" style=\"background-color: " + experience.color + ";\"></div>" +
-      makeExperienceDate(experience.endDate) +
+    makeExperienceDate(experience.startDate) +
+    "<div class=\"experienceDurationBar\" style=\"background-color: " + experience.color + ";\"></div>" +
+    makeExperienceDate(experience.endDate) +
     "</div>";
 }
 
@@ -898,8 +898,8 @@ function makeExperienceTags(experienceTags, color) {
   var tagContainer = "<div class=\"experienceTagsContainer\">"
   for (var i = 0; i < experienceTags.length; i++) {
     tagContainer += "<div class=\"experienceTagContainer\" style=\"border-color: " + color + "\">" +
-                      "<h3 class=\"tag\">" + experienceTags[i] + "</h3>" +
-                    "</div>";
+      "<h3 class=\"tag\">" + experienceTags[i] + "</h3>" +
+      "</div>";
   }
   return tagContainer + "</div>";
 }

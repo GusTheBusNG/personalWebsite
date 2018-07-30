@@ -3,6 +3,7 @@
 }
 
 .pageTitle {
+  position: relative;
   font-size: 3rem;
   opacity: 0;
 }

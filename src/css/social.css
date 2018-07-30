@@ -126,31 +126,6 @@
   background-image: url('../img/instagram.png');
 }
 
-.shakeAnimation {
-  animation-name: shake;
-  animation-duration: 300ms;
-  animation-delay: 0s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 5;
-  animation-direction: normal;
-  animation-fill-mode: backwards;
-}
-
-@keyframes shake {
-  0% {
-    top: 0;
-  }
-  33% {
-    top: 10px;
-  }
-  66% {
-    top: 0;
-  }
-  100% {
-    top: -10px;
-  }
-}
-
 @media (max-width: 701px) {
   .resumeAndSocialLinks {
     flex-direction: column;
