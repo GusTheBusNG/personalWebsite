@@ -1,4 +1,5 @@
 var floppingImagesStarted = false;
+var experienceHeights = [];
 
 $(window).on("load", function () {
   $(window).scroll(function () {
@@ -11,26 +12,27 @@ $(window).on("load", function () {
       }
     });
 
-    $(".experience").each(function () {
-      var experienceContainer = $(this).offset().top + ($(this).outerHeight() / 4);
-
+    $(".experienceContainer").each(function () {
+      var experienceContainer = $(this).offset().top + ($(this).outerHeight() * .75);
+      experienceHeights.push($(this).outerHeight());
       if (experienceContainer < windowBottom) {
         if ($(this).css("opacity") == 0) {
-          $(this).fadeTo(500, 1);
+          $(this).toggleClass("fadeInAndUp");
         }
       }
     });
 
     $(".experienceDurationBar").each(function (i) {
-      var experienceContainer = $(this).offset().top + ($(".experienceDurationContainer").outerHeight() * .3);
+      var experienceContainer = $(this).offset().top;
 
       if (experienceContainer < windowBottom) {
-        if ($(this).css("height") == "0px") {
+        if (!$(this).hasClass('drawInAnimation')) {
+          $("#experienceDuration" + i).height(experienceHeights[i]);
           $(this).toggleClass("drawInAnimation");
           i *= 2;
           var date = document.getElementsByClassName("experienceDate");
-          fadeIn(date[i]);
           setTimeout(function () {
+            fadeIn(date[i]);
             fadeIn(date[++i]);
           }, 1000);
         }
