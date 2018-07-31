@@ -61,7 +61,6 @@ $(window).on("load", function () {
 
         if (awardContainer < windowBottom) {
           if ($(this).css("opacity") == 0) {
-            console.log('hit')
             $(this).fadeTo(500 + ((500 * j) / (i + 2)), 1);
           }
         }
