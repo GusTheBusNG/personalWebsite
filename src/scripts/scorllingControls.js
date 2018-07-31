@@ -40,14 +40,17 @@ $(window).on("load", function () {
     });
 
     $(".skillBar").each(function () {
-      var skillBar = $(this).offset().top + ($(this).outerHeight() * .2);
+      var skillBar = $(this).offset().top;
 
       if (skillBar < windowBottom) {
         if ($(this).css("height") == "0px") {
+          $(".skillType").toggleClass("fadeInAndUp");
+          $(".skills").toggleClass("fadeInAndRight");
           $(this).toggleClass("drawInAnimationMainBar");
-          $(".skillType").fadeTo(500, 1);
-          $(".skills").fadeTo(500, 1);
-          $(".ratingsContainer").fadeTo(500, 1);
+
+          setTimeout(function () {
+            $(".ratingsContainer").toggleClass("fadeInAndRight");
+          }, 1000);
         }
       }
     });
