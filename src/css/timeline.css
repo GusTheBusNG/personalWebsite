@@ -23,6 +23,7 @@
   bottom: 0;
   left: 50%;
   margin-left: -3px;
+  z-index: -1;
 }
 
 .experienceContainer {
@@ -34,7 +35,7 @@
 }
 
 /* circles on timeline */
-/* .experienceContainer::after {
+.experienceContainer::after {
   content: '';
   box-sizing: border-box;
   position: absolute;
@@ -46,7 +47,7 @@
   top: 2rem;
   border-radius: 50%;
   z-index: 1;
-} */
+}
 
 .right {
   left: 50%;
