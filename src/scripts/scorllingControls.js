@@ -55,14 +55,17 @@ $(window).on("load", function () {
       }
     });
 
-    $(".award").each(function (i) {
-      var awardContainer = $(this).offset().top + ($(this).outerHeight() * .2);
+    $(".awardRow").each(function (i) {
+      $(".award").each(function (j) {
+        var awardContainer = $(this).offset().top + ($(this).outerHeight() * .2);
 
-      if (awardContainer < windowBottom) {
-        if ($(this).css("opacity") == 0) {
-          $(this).fadeTo(500 + (500 * i), 1);
+        if (awardContainer < windowBottom) {
+          if ($(this).css("opacity") == 0) {
+            console.log('hit')
+            $(this).fadeTo(500 + ((500 * j) / (i + 2)), 1);
+          }
         }
-      }
+      })
     });
 
     $(".horizontalBar").each(function () {
