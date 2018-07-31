@@ -75,6 +75,16 @@ $(window).on("load", function () {
       }
     });
 
+    $(".sectionTitleContainer").each(function () {
+      var sectionTitle = $(this).offset().top + $(this).outerHeight() * .5;
+
+      if (sectionTitle < windowBottom) {
+        if (!$(this).hasClass("fadeInAndUp")) {
+          $(this).toggleClass("fadeInAndUp");
+        }
+      }
+    })
+
     $(".majorContainer").each(function () {
       var majorContainer = $(this).offset().top + ($(this).outerHeight() * .4);
 
@@ -86,17 +96,17 @@ $(window).on("load", function () {
     });
 
     $(".GPAContainer").each(function () {
-      var GPAContainer = $(this).offset().top + ($(this).outerHeight() * .4);
+      var GPAContainer = $(this).offset().top + ($(this).outerHeight());
 
       if (GPAContainer < windowBottom) {
-        if ($(this).css("opacity") == 0) {
-          $(this).toggleClass("fadeInAndRight");
+        if (!$(this).hasClass("fadeInAndUp")) {
+          $(this).toggleClass("fadeInAndUp");
         }
       }
     });
 
     $(".notableCoursesContainer").each(function () {
-      var notableCoursesContainer = $(this).offset().top + ($(this).outerHeight() * .2);
+      var notableCoursesContainer = $(this).offset().top + ($(this).outerHeight() * .7);
 
       if (notableCoursesContainer < windowBottom) {
         if ($(this).css("opacity") == 0) {
