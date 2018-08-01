@@ -27,7 +27,7 @@ $(window).on("load", function () {
 
       if (experienceContainer < windowBottom) {
         if (!$(this).hasClass('drawInAnimation')) {
-          $("#experienceDuration" + i).height(experienceHeights[i]);
+          $("#experienceDuration" + i).height(experienceHeights[i] * .8);
           $(this).toggleClass("drawInAnimation");
           i *= 2;
           var date = document.getElementsByClassName("experienceDate");
