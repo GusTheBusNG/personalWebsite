@@ -6,6 +6,7 @@ var rowImageIndex = -1;
 var indicesOfCurrentImages = [];
 var numberOfImages = 1, numberOfImagesPerRow = getNumberOfImagesPerRow();
 var recursiveCount = 0, continueRecursing = [true], relevantContinueRecursingIndex = 0;
+const timeout = 1000;
 
 function sendHobbieImg(hobbieImgs) {
   this.hobbieImgs = hobbieImgs;
@@ -73,14 +74,14 @@ function flopRandomImagesToARowImage() {
     replaceWithRowImage(index);
     rowImageIndex = index;
     flopImages(false);
-  }, 1000);
+  }, timeout * 2);
 }
 
 function flopRandomImage(rowImageIndex) {
   var randomHobbieIndex = rowImageIndex || getRandomIndex();
   if (this.rowImageIndex == randomHobbieIndex) {
     // replacing a row image with 2 or 3 different regular images
-    setTimeout(function() {
+    setTimeout(function () {
       hobbies[randomHobbieIndex].style.visibility = "hidden";
       hobbies[randomHobbieIndex].outerHTML = makeHobbieImagesToReplaceRowImage();
       var replacedImgs = getImagesThatReplacedTheRowImage();
@@ -94,16 +95,16 @@ function flopRandomImage(rowImageIndex) {
           while (index == 0 || index % replacedImgs.length != 0) {
             replacedImgs[index++].classList.toggle("flopAnimation");
           }
-        }, 500);
+        }, timeout);
       }
       numberOfImagesPerRow >= 3 ? numberOfImages += 2 : numberOfImages++;
       flopImages(true);
-    }, 1000);
+    }, timeout * 2);
   } else {
-    setTimeout(function() {
+    setTimeout(function () {
       flopNewImage(randomHobbieIndex);
       flopImages(false);
-    }, 1000);
+    }, timeout * 2);
   }
 }
 
@@ -133,7 +134,7 @@ function getIndexToStartReplacingWithRowImage() {
     }
   } else {
     while (counter++ <= 3 && (!((index + 3) % numberOfImagesPerRow == 0 ||
-            (index + 3) % numberOfImagesPerRow > index % numberOfImagesPerRow))) {
+      (index + 3) % numberOfImagesPerRow > index % numberOfImagesPerRow))) {
       index = getRandomIndex();
     }
   }
@@ -165,7 +166,7 @@ function flopNewImage(index) {
 function takeOffFlopAnimation(hobbieImg) {
   setTimeout(function () {
     hobbieImg.classList.toggle("flopAnimation");
-  }, 500);
+  }, timeout);
 }
 
 function getNumberOfImagesPerRow() {
@@ -183,12 +184,12 @@ function makeHobbieImagesToReplaceRowImage(randomHobbieIndex) {
   if (numberOfImagesPerRow >= 3) {
     var index = Math.abs(Math.floor(Math.random() * hobbieImgs.length) - 2);
     return "<div class=\"hobbieImg\" id=\"1\" style=\"background-image: " + makeHobbieUrl(hobbieImgs[index++]) + ";\"></div>" +
-            "<div class=\"hobbieImg\" id=\"2\" style=\"background-image: " + makeHobbieUrl(hobbieImgs[index++]) + ";\"></div>" +
-            "<div class=\"hobbieImg\" id=\"3\" style=\"background-image: " + makeHobbieUrl(hobbieImgs[index]) + ";\"></div>";
+      "<div class=\"hobbieImg\" id=\"2\" style=\"background-image: " + makeHobbieUrl(hobbieImgs[index++]) + ";\"></div>" +
+      "<div class=\"hobbieImg\" id=\"3\" style=\"background-image: " + makeHobbieUrl(hobbieImgs[index]) + ";\"></div>";
   }
   var index = Math.abs(Math.floor(Math.random() * hobbieImgs.length) - 1);
   return "<div class=\"hobbieImg\" id=\"1\" style=\"background-image: " + makeHobbieUrl(hobbieImgs[index++]) + ";\"></div>" +
-          "<div class=\"hobbieImg\" id=\"2\" style=\"background-image: " + makeHobbieUrl(hobbieImgs[index]) + ";\"></div>"
+    "<div class=\"hobbieImg\" id=\"2\" style=\"background-image: " + makeHobbieUrl(hobbieImgs[index]) + ";\"></div>"
 }
 
 function makeHobbieUrl(hobbieImg) {

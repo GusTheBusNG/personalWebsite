@@ -9,6 +9,13 @@ var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
 
+const sourceHtml = 'src/*.html';
+const sourceScripts = 'src/scripts/*.js';
+const sourceCss = 'src/css/*.css';
+const sourceImg = 'src/img/*.+(png|jpg|jpeg|gif|svg)';
+
+const mainFiles = [sourceHtml, sourceCss, sourceScripts];
+
 gulp.task('default', function (callback) {
   runSequence(['browserSync', 'watch'],
     callback
@@ -16,8 +23,6 @@ gulp.task('default', function (callback) {
 });
 
 gulp.task('watch', function () {
-  const mainFiles = ['src/*.html', 'src/scripts/*.js', 'src/css/*.css'];
-
   gulp.watch(mainFiles).on('change', function () {
     browserSync.reload();
   });
@@ -39,15 +44,15 @@ gulp.task('browserSync', function () {
 });
 
 gulp.task('useref', function () {
-  return gulp.src('src/*.html')
+  return gulp.src(sourceHtml)
     .pipe(useref())
-    .pipe(gulpIf('*.js', uglify()))
-    .pipe(gulpIf('*.css', cssnano()))
+    .pipe(gulpIf(sourceScripts, uglify()))
+    .pipe(gulpIf(sourceCss, cssnano()))
     .pipe(gulp.dest('prod'));
 });
 
 gulp.task('images', function () {
-  return gulp.src('src/img/*.+(png|jpg|jpeg|gif|svg)')
+  return gulp.src(sourceImg)
     .pipe(cache(imagemin({
       interlaced: true
     })))
