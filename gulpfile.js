@@ -13,6 +13,7 @@ const sourceHtml = 'src/*.html';
 const sourceScripts = 'src/scripts/*.js';
 const sourceCss = 'src/css/*.css';
 const sourceImg = 'src/img/*.+(png|jpg|jpeg|gif|svg)';
+const sourceDocs = 'src/docs/*.pdf';
 
 const mainFiles = [sourceHtml, sourceCss, sourceScripts];
 
@@ -30,7 +31,7 @@ gulp.task('watch', function () {
 
 gulp.task('build', function (callback) {
   runSequence('clean:prod',
-    ['useref', 'images'],
+    ['useref', 'images', 'docs'],
     callback
   );
 });
@@ -54,6 +55,11 @@ gulp.task('useref', function () {
 gulp.task('images', function () {
   return gulp.src(sourceImg)
     .pipe(gulp.dest('prod/img'));
+});
+
+gulp.task('docs', function () {
+  return gulp.src(sourceDocs)
+    .pipe(gulp.dest('prod/docs'));
 });
 
 gulp.task('clean:prod', function () {
