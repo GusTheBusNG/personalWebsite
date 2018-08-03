@@ -30,7 +30,7 @@ gulp.task('watch', function () {
 
 gulp.task('build', function (callback) {
   runSequence('clean:prod',
-    ['useref'/*, 'images'*/],
+    ['useref', 'images'],
     callback
   );
 });
@@ -53,9 +53,6 @@ gulp.task('useref', function () {
 
 gulp.task('images', function () {
   return gulp.src(sourceImg)
-    .pipe(cache(imagemin({
-      interlaced: true
-    })))
     .pipe(gulp.dest('prod/img'));
 });
 
