@@ -106,16 +106,16 @@ sendSkillsTools([
   { name: "Adobe Xd", stars: 4.5 },
   { name: "Atlassian Suite", stars: 4.0 },
   { name: "Postman", stars: 4.0 },
-  { name: "AWS", stars: 2.5 },
-  { name: "Unity", stars: 2.5 }
+  { name: "Unity", stars: 3.5 },
+  { name: "AWS", stars: 2.5 }
 ]);
 sendNotableCourses([
   { title: "CPSC 2120 Algorithms and Data Structures", description: "Study of data structures and algorithms fundamental to computer science; abstract data-type concepts; measures of program running time and time complexity; algorithm analysis and design techniques." },
   { title: "CPSC 3120 Introduction to Desgin and Analysis of Algorithms", description: "Topics include advanced data structures, amortized analysis, dynamic programming, graph algorithms, intractability and applications." },
   { title: "CPSC 2150 Software Development Foundations", description: "Intensive study of software development foundations. Advanced coverage of programming language primitives, function-level design principles, and standard development and debugging tools. Introductory coverage of module-level design principles, program specification and reasoning principles, and validation and verification techniques." },
   { title: "CPSC 3600 Networks and Network Programming", description: "Introduction to basic concepts of computer network technologies and network programming. Topics include network programming, layered protocol architectures, local and wide area networks, internetwork and intranetwork concepts, security. Socket level programming is introduced and used throughout the course." },
-  { title: "CPSC 2310 Introduction to Computer Organization", description: "Study of the machine architectures on which algorithms are implemented and requirements of architectures that support high-level languages, programming environments, and applications." },
-  { title: "CPSC 3720 Introduction Software Engineering", description: "Intensive introduction to software engineering. Focuses on each major phase of the software lifecycle. Introductory coverage of requirements analysis, requirements modeling, design modeling, and project management. Intermediate coverage of module-level design principles, program specification and reasoning principles, and program validation and verification techniques." }
+  { title: "CPSC 3720 Introduction Software Engineering", description: "Intensive introduction to software engineering. Focuses on each major phase of the software lifecycle. Introductory coverage of requirements analysis, requirements modeling, design modeling, and project management. Intermediate coverage of module-level design principles, program specification and reasoning principles, and program validation and verification techniques." },
+  { title: "CPSC 4110 Virtual Reality Systems", description: "Design and implementation of software systems necessary to create virtual environments. Discusses techniques for achieving real-time, dynamic display of photorealistic, synthetic images. Includes hands-on experience with electromagnetically-tracked, head-mounted displays and requires, as a final project, the design and construction of a virtual environment. My group got an honorable mention for one of the best Virtual Reality Demos." }
 ]);
 sendHobbieImgRow([
   "clemsonVsLousiville.jpg",
