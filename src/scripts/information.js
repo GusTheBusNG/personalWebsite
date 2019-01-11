@@ -118,22 +118,22 @@ sendNotableCourses([
   { title: "CPSC 4110 Virtual Reality Systems", description: "Design and implementation of software systems necessary to create virtual environments. Discusses techniques for achieving real-time, dynamic display of photorealistic, synthetic images. Includes hands-on experience with electromagnetically-tracked, head-mounted displays and requires, as a final project, the design and construction of a virtual environment. My group got an honorable mention for one of the best Virtual Reality Demos." }
 ]);
 sendHobbieImgRow([
-  "clemsonVsLousiville.jpg",
-  "nationalChampionship.jpg",
-  "moutains.jpg"
+  "http://gdurl.com/1bcH", // Clemson Vs Lousivlle
+  "http://gdurl.com/UUJE", // National Championship
+  "http://gdurl.com/IgAj"  // Mountains
 ]);
 sendHobbieImg([
-  "cliff.jpg",
-  "repel.jpg",
-  "rockWay.jpg",
-  "lazer.jpg",
-  "eagleProject.jpg",
-  "sandiego.jpg",
-  "sandiegocliffs.jpg",
-  "riverbanks.jpg",
-  "trophies.jpg",
-  "crazyTrumpets.jpg",
-  "baldy.jpg"
+  "http://gdurl.com/1T_k", // Cliff
+  "http://gdurl.com/rAvJ", // Repel
+  "http://gdurl.com/lhh0", // Rock way
+  "http://gdurl.com/9jSq", // Lazer
+  "http://gdurl.com/Hqwr", // Eagle Project
+  "http://gdurl.com/EO3x", // San Diego
+  "http://gdurl.com/Qqr2", // San Diego Cliffs
+  "http://gdurl.com/WiSf", // Riverbanks
+  "http://gdurl.com/jOP4", // Trophies
+  "http://gdurl.com/Li1S", // Crazy trumpets
+  "http://gdurl.com/D0-8"  // badly
 ]);
 sendAwards([
   ["Eagle Scout", "Boy Souts of America", "Troop 95", "Irmo, SC", "June 2015"],

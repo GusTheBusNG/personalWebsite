@@ -1,14 +1,14 @@
 var ratingToImageTable = ["", "", "", "", "",
-  "img/2.5-stars.png",
-  "img/3-stars.png",
-  "img/3.5-stars.png",
-  "img/4-stars.png",
-  "img/4.5-stars.png",
-  "img/5-stars.jpeg"
+  "http://gdurl.com/CZQD", // 2.5
+  "http://gdurl.com/Uh1H", // 3
+  "http://gdurl.com/1U6C", // 3.5
+  "http://gdurl.com/ETfv", // 4
+  "http://gdurl.com/5sp1", // 4.5
+  "http://gdurl.com/3gB4"  // 5
 ];
 
 function findRatingPath(rating) {
-  return ratingToImageTable[rating*2];
+  return ratingToImageTable[rating * 2];
 }
 
 function makeSkill(item) {

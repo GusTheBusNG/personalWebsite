@@ -101,7 +101,7 @@
 }
 
 .socialLink:hover#facebook {
-  background-color: #3B59AF;
+  background-color: #3b5998;
 }
 
 .socialLink:hover#instagram {
@@ -109,21 +109,21 @@
 }
 
 .socialIcon#git {
-  background-image: url('../img/github.png');
+  background-image: url('http://gdurl.com/iC3I');
 }
 
 .socialIcon#linked {
   height: 4rem;
   width: 4rem;
-  background-image: url('../img/linkedin.png');
+  background-image: url('http://gdurl.com/GlcQ');
 }
 
 .socialIcon#face {
-  background-image: url('../img/facebook.png');
+  background-image: url('http://gdurl.com/zMCc');
 }
 
 .socialIcon#insta {
-  background-image: url('../img/instagram.png');
+  background-image: url('http://gdurl.com/RFlS');
 }
 
 @media (max-width: 701px) {

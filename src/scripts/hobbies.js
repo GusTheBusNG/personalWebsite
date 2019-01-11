@@ -193,7 +193,7 @@ function makeHobbieImagesToReplaceRowImage(randomHobbieIndex) {
 }
 
 function makeHobbieUrl(hobbieImg) {
-  return "url('img/" + hobbieImg + "')";
+  return "url('" + hobbieImg + "')";
 }
 
 function makeHobbieRowImg() {
