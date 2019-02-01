@@ -72,6 +72,15 @@ sendExperiences([
     color: "#0089FF",
     description: "I got to lead 4 people to test and develop automated test scripts for a complex web application. While leading I gathered and handled new ideas and information from the team to improve the way the team tests web/mobile applications. Therefore, I provided and proved a better flow for the test team in how to develop and document tests to allow more creative thought from the test engineers. This new system molded new interns and full time developers to be creative and motivated test engineers. A smaller project was finishing development of automated test scripts for a major feature of the BMW Connected mobile application.",
     tags: ["Leadership", "MongoDB", "Protractor", "PostgreSQL", "Cypress", "Typescript", "Git", "testCafé", "Bamboo", "Zephyr", "Postman"]
+  },
+  {
+    title: "BMW Digital and Mobile Co-op",
+    location: "BMW Group @ Greenville, SC",
+    startDate: "January 2019",
+    endDate: "Present",
+    color: "#0089FF",
+    description: "Going to be learning tons about Kubernetes, Docker and Amazon Web Services while on the infrastructure team. Migrated proxy endpoints for microservices with AWS. Created a bash monitoring script. The team is providing infrastructure support to 4 successful projects, each with 5 or more microservices to also host.",
+    tags: ["AWS", "Kubernetes", "Docker", "Splunk", "NGINX", "Yaml", "Slack", "Git", "Bamboo", "Postman"]
   }
 ]);
 sendSkillsLanguages([
