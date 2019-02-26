@@ -1108,21 +1108,21 @@ body::before {
 }
 
 .socialIcon#git {
-  background-image: url('../img/github.png');
+  background-image: url('https://i.imgur.com/zpITaUY.png');
 }
 
 .socialIcon#linked {
   height: 4rem;
   width: 4rem;
-  background-image: url('../img/linkedin.png');
+  background-image: url('https://i.imgur.com/Cle0RdH.png');
 }
 
 .socialIcon#face {
-  background-image: url('http://gdurl.com/zMCc');
+  background-image: url('https://i.imgur.com/HS2VCl5.png');
 }
 
 .socialIcon#insta {
-  background-image: url('../img/instagram.png');
+  background-image: url('https://i.imgur.com/fxiPT7L.jpg');
 }
 
 .shakeAnimation {

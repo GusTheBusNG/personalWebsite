@@ -109,21 +109,21 @@
 }
 
 .socialIcon#git {
-  background-image: url('http://gdurl.com/iC3I');
+  background-image: url('https://i.imgur.com/zpITaUY.png');
 }
 
 .socialIcon#linked {
   height: 4rem;
   width: 4rem;
-  background-image: url('http://gdurl.com/GlcQ');
+  background-image: url('https://i.imgur.com/Cle0RdH.png');
 }
 
 .socialIcon#face {
-  background-image: url('http://gdurl.com/zMCc');
+  background-image: url('https://i.imgur.com/HS2VCl5.png');
 }
 
 .socialIcon#insta {
-  background-image: url('http://gdurl.com/RFlS');
+  background-image: url('https://i.imgur.com/fxiPT7L.jpg');
 }
 
 @media (max-width: 701px) {

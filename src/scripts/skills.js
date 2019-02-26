@@ -1,10 +1,10 @@
 var ratingToImageTable = ["", "", "", "", "",
-  "http://gdurl.com/CZQD", // 2.5
-  "http://gdurl.com/Uh1H", // 3
-  "http://gdurl.com/1U6C", // 3.5
-  "http://gdurl.com/ETfv", // 4
-  "http://gdurl.com/5sp1", // 4.5
-  "http://gdurl.com/3gB4"  // 5
+  "https://i.imgur.com/Cr5dmyZ.png", // 2.5
+  "https://i.imgur.com/chg8dnm.png", // 3
+  "https://i.imgur.com/09AnQNO.png", // 3.5
+  "https://i.imgur.com/yL7EcQA.png", // 4
+  "https://i.imgur.com/0kHMffB.png", // 4.5
+  "https://i.imgur.com/qnkghMM.jpg"  // 5
 ];
 
 function findRatingPath(rating) {

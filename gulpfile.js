@@ -4,7 +4,6 @@ var useref = require('gulp-useref');
 var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
 var cssnano = require('gulp-cssnano');
-var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
@@ -12,7 +11,6 @@ var runSequence = require('run-sequence');
 const sourceHtml = 'src/*.html';
 const sourceScripts = 'src/scripts/*.js';
 const sourceCss = 'src/css/*.css';
-const sourceImg = 'src/img/*.+(png|jpg|jpeg|gif|svg)';
 const sourceDocs = 'src/docs/*.pdf';
 
 const mainFiles = [sourceHtml, sourceCss, sourceScripts];
@@ -31,7 +29,7 @@ gulp.task('watch', function () {
 
 gulp.task('build', function (callback) {
   runSequence('clean:prod',
-    ['useref', 'images', 'docs'],
+    ['useref', 'docs'],
     callback
   );
 });
@@ -50,11 +48,6 @@ gulp.task('useref', function () {
     .pipe(gulpIf(sourceScripts, uglify()))
     .pipe(gulpIf(sourceCss, cssnano()))
     .pipe(gulp.dest('prod'));
-});
-
-gulp.task('images', function () {
-  return gulp.src(sourceImg)
-    .pipe(gulp.dest('prod/img'));
 });
 
 gulp.task('docs', function () {
