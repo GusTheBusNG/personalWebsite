@@ -127,9 +127,12 @@ sendNotableCourses([
   { title: "CPSC 4110 Virtual Reality Systems", description: "Design and implementation of software systems necessary to create virtual environments. Discusses techniques for achieving real-time, dynamic display of photorealistic, synthetic images. Includes hands-on experience with electromagnetically-tracked, head-mounted displays and requires, as a final project, the design and construction of a virtual environment. My group got an honorable mention for one of the best Virtual Reality Demos." }
 ]);
 sendHobbieImgRow([
-  "https://i.imgur.com/HxZdh1A.jpg", // Clemson Vs Lousivlle
+  "https://i.imgur.com/HxZdh1A.jpg", // Clemson Vs Lousiville
   "https://i.imgur.com/Im2IWdd.jpg", // National Championship
-  "https://i.imgur.com/JlTwneT.jpg"  // Mountains
+  "https://i.imgur.com/JlTwneT.jpg", // Mountains
+  "https://i.imgur.com/irCYC0L.jpg", // Empty death valley
+  "https://i.imgur.com/5MfVSIr.jpg", // In the cloud on top of Grandfather mountain
+  "https://i.imgur.com/6eJ9fnS.jpg"  // Ceaser's head
 ]);
 sendHobbieImg([
   "https://i.imgur.com/OfHNjfo.jpg", // Cliff
@@ -142,7 +145,40 @@ sendHobbieImg([
   "https://i.imgur.com/70rihRV.jpg", // Riverbanks
   "https://i.imgur.com/KtMd5hD.jpg", // Trophies
   "https://i.imgur.com/DcNWe3P.jpg", // Crazy trumpets
-  "https://i.imgur.com/rjfGjvi.jpg"  // badly
+  "https://i.imgur.com/rjfGjvi.jpg", // badly
+  "https://i.imgur.com/cdRxHVA.jpg", // looking through trees at rolling hills
+  "https://i.imgur.com/KKZLpQS.jpg", // looking through trees at a cliff face
+  "https://i.imgur.com/wgAqPIk.jpg", // me hiking and looking over my shoulder
+  "https://i.imgur.com/QS8Yvq0.jpg", // far rainbow falls
+  "https://i.imgur.com/I2TKkmu.jpg", // open view of rolling hills
+  "https://i.imgur.com/tqZubTx.jpg", // feet up in my hammock
+  "https://i.imgur.com/dIGJnrJ.jpg", // salk family 2018
+  "https://i.imgur.com/dUWMmcZ.jpg", // foggy river
+  "https://i.imgur.com/YW3IpOH.jpg", // close rainbow falls 
+  "https://i.imgur.com/VDUhum9.jpg", // death valley 2018 sunset
+  "https://i.imgur.com/ODBJVx5.jpg", // me underneath rainbow falls
+  "https://i.imgur.com/UDWdZzh.jpg", // G. chocolate factory
+  "https://i.imgur.com/AbmOJWN.jpg", // beaufort sunset
+  "https://i.imgur.com/NYxo6F8.jpg", // sun + open rolling hills
+  "https://i.imgur.com/1wqKK7C.jpg", // feet up with a river
+  "https://i.imgur.com/rVCeahq.jpg", // blue boat
+  "https://i.imgur.com/qenUnVy.jpg", // Tillman ... at night
+  "https://i.imgur.com/2cj2f0z.jpg", // Dallas park ... at night
+  "https://i.imgur.com/l7WxpEH.jpg", // 2018 section leader pic at Dallas
+  "https://i.imgur.com/mgpa1ai.jpg", // salk board 2018
+  "https://i.imgur.com/MJfLHmS.jpg", // water bottles
+  "https://i.imgur.com/ybrehzL.jpg", // 2018 trumpet reYEET
+  "https://i.imgur.com/8kwbWwK.jpg", // mountain biking
+  "https://i.imgur.com/Eb35LBY.jpg", // trail blaze through leaves
+  "https://i.imgur.com/cxl0yns.jpg", // sunrise AT
+  "https://i.imgur.com/h6B6dVS.jpg", // back of the head shot
+  "https://i.imgur.com/DND8zCa.jpg", // night flight of the city
+  "https://i.imgur.com/lsTXv7b.jpg", // 2018 section leader at Natty
+  "https://i.imgur.com/dYaaKGt.jpg", // rainbow falls - a lot of water
+  "https://i.imgur.com/GKb4Vrk.jpg", // Emma and I at the Natty 2018
+  "https://i.imgur.com/pTxFmc2.jpg", // Light house in beaufort
+  "https://i.imgur.com/F1FnWN9.jpg", // sunrise over mountain on AT
+  "https://i.imgur.com/lKEh6a2.jpg"  // Death valley sign ... At night
 ]);
 sendAwards([
   ["Eagle Scout", "Boy Souts of America", "Troop 95", "Irmo, SC", "June 2015"],
