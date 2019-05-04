@@ -52,7 +52,7 @@ sendExperiences([
     startDate: "August 2017",
     endDate: "December 2017",
     color: "#0089FF",
-    description: "Implemented a major feature to be added into the main BMW mobile application with a software engineering team comprised of 8 people. Developed this feature in Angular 4 with Test-Driven Development. Improved 3 different micro-services for the major feature using ExpressJS. Designed and developed the end-to-end automated testing library for the major feature. Pioneered and created an automated testing stack to run automated tests on both iOS and Android simultaneously using Protractor and Appium.",
+    description: "Implemented part of My Car Is Born, a major feature in the BMW Connected app. Designed, developed, and pioneered end-to-end automated testing for My Car Is Born. Automated testing was an unseen area for my department at this time. Pioneered and created an automated testing stack to run automated tests on both iOS and Android simultaneously using Protractor and Appium. The testing team could now use the same framework to write tests for the web applications as well as mobile applications; this enables the team easily maintain tests and switch between projects.",
     tags: ["TypeScript", "Angular 4+", "NodeJS", "Protractor", "Appium", "Jasmine", "Selenium", "PostgreSQL", "ExpressJS", "Docker"]
   },
   {
@@ -70,7 +70,7 @@ sendExperiences([
     startDate: "May 2018",
     endDate: "August 2018",
     color: "#0089FF",
-    description: "I got to lead 4 people to test and develop automated test scripts for a complex web application. While leading I gathered and handled new ideas and information from the team to improve the way the team tests web/mobile applications. Therefore, I provided and proved a better flow for the test team in how to develop and document tests to allow more creative thought from the test engineers. This new system molded new interns and full time developers to be creative and motivated test engineers. A smaller project was finishing development of automated test scripts for a major feature of the BMW Connected mobile application.",
+    description: "Led 4 people to test and develop end-to-end automated test scripts for complex web applications. Gathered and handled new ideas and information from the team to improve the way the team tests web/mobile applications. Provided and proved a better flow for the test team in how to develop and document tests to allow more creative thought from the test engineers. Crafted new standards for developing end-to-end automated tests and implemented them for a major application. Finished development of automated test scripts for a major feature of the BMW Connected mobile application.",
     tags: ["Leadership", "MongoDB", "Protractor", "PostgreSQL", "Cypress", "Typescript", "Git", "testCafé", "Bamboo", "Zephyr", "Postman"]
   },
   {
@@ -79,7 +79,7 @@ sendExperiences([
     startDate: "January 2019",
     endDate: "Present",
     color: "#0089FF",
-    description: "Going to be learning tons about Kubernetes, Docker and Amazon Web Services while on the infrastructure team. Migrated proxy endpoints for microservices with AWS. Created a bash monitoring script. The team is providing infrastructure support to 4 successful projects, each with 5 or more microservices to also host.",
+    description: "Composed 2 Kubernetes manifests for secure, production ready, MariaDB deployments. One manifest is for the highly available Galera cluster and the other is for the Master-Slave cluster, both take advantage of MariaDB Maxscale. Explored AWS Lambda functions and Kubeless functions for a microservice replacement. Developed a serverless function to keep cross account target groups updated in AWS so our Kubernetes cluster’s nodes can stay highly available. Developed Splunk Analytics algorithms to demonstrate user activity and feature effectiveness. Accommodated infrastructure support for 4 major web applications. Each project has several microservices and working in the continuous development agile working model.",
     tags: ["AWS", "Kubernetes", "Docker", "Splunk", "NGINX", "Yaml", "Slack", "Git", "Bamboo", "Postman"]
   }
 ]);
