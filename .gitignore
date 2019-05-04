@@ -1,4 +1,4 @@
 node_modules
-personalWebsiteDesgin.xd
 .DS_Store
-prod
+**/.DS_Store
+.env.*
