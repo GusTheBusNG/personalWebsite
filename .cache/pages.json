@@ -20,11 +20,6 @@
         "path": "/dev-404-page/"
     },
     {
-        "componentChunkName": "component---src-pages-page-2-js",
-        "jsonName": "page-2-fbc",
-        "path": "/page-2/"
-    },
-    {
         "componentChunkName": "component---src-components-contentful-js",
         "jsonName": "slug-2db",
         "path": "/slug"
