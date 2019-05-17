@@ -1,3 +1,29 @@
+@import './variables.scss';
+@import './breakpoints.scss';
+
 .layout {
-  font-family: 'Roboto'
+  width: 75vw;
+  margin: 0 12.5vw;
+
+  @include tablet {
+    width: 90vw;
+    margin: 0 5vw;
+  }
+
+  @include mobile {
+    width: 100vw;
+    margin: 0;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  color: $description-text-color;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto';
+  background-color: $background-color;
 }

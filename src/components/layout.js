@@ -6,7 +6,7 @@ const Layout = ({ children }) => (
   <div className="layout">
     <main>{children}</main>
     <footer>
-      © {new Date().getFullYear()}, Nicholas Gustafson
+      © {new Date().getFullYear()} Nicholas Gustafson
     </footer>
   </div>
 )

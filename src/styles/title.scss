@@ -1,0 +1,25 @@
+@import './variables.scss';
+@import './breakpoints.scss';
+
+.title {
+  &__heading {
+    max-width: 400px;
+    padding-left: 4px;
+    margin: 0;
+    color: $title-text-color;
+    font-size: $font-size-3;
+    font-weight: bold;
+
+    border-bottom: solid 2px $highlight-blue;
+
+    @include mobile {
+      padding: 0;
+    }
+  }
+
+  @include mobile {
+    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+  }
+}
