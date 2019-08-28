@@ -2,3 +2,5 @@ node_modules
 personalWebsiteDesgin.xd
 .DS_Store
 prod
+
+.env*

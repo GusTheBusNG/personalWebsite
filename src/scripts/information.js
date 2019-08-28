@@ -47,12 +47,12 @@ sendExperiences([
     tags: ["HTML", "CSS", "JavaScript", "PHP", "AWS"]
   },
   {
-    title: "BMW Digital and Mobile Co-op",
+    title: "Software Developer Co-op",
     location: "BMW Group @ Greenville, SC",
     startDate: "August 2017",
     endDate: "December 2017",
     color: "#0089FF",
-    description: "Implemented part of My Car Is Born, a major feature in the BMW Connected app. Designed, developed, and pioneered end-to-end automated testing for My Car Is Born. Automated testing was an unseen area for my department at this time. Pioneered and created an automated testing stack to run automated tests on both iOS and Android simultaneously using Protractor and Appium. The testing team could now use the same framework to write tests for the web applications as well as mobile applications; this enables the team easily maintain tests and switch between projects.",
+    description: "Implemented part of My Car Is Born, a major feature in the BMW Connected app. Designed, developed, and pioneered end-to-end automated testing for My Car Is Born. Created the first JavaScript end-to-end testing suites and restructured how the tests were written. Pioneered and created an automated testing stack to run automated tests on both iOS and Android simultaneously using Protractor and Appium. The testing team could now use the same framework to write tests for the web applications as well as mobile applications; this enables the team easily maintain tests and switch between projects.",
     tags: ["TypeScript", "Angular 4+", "NodeJS", "Protractor", "Appium", "Jasmine", "Selenium", "PostgreSQL", "ExpressJS", "Docker"]
   },
   {
@@ -65,53 +65,81 @@ sendExperiences([
     tags: ["OBS", "Excel", "BioPack"]
   },
   {
-    title: "BMW Digital and Mobile Co-op",
+    title: "Software Developer Co-op",
     location: "BMW Group @ Greenville, SC",
     startDate: "May 2018",
     endDate: "August 2018",
     color: "#0089FF",
-    description: "Led 4 people to test and develop end-to-end automated test scripts for complex web applications. Gathered and handled new ideas and information from the team to improve the way the team tests web/mobile applications. Provided and proved a better flow for the test team in how to develop and document tests to allow more creative thought from the test engineers. Crafted new standards for developing end-to-end automated tests and implemented them for a major application. Finished development of automated test scripts for a major feature of the BMW Connected mobile application.",
+    description: "Lead 4 people to test and develop end-to-end automated test scripts for complex web applications. Gathered and handled new ideas and information from the team to improve the way the team tests web/mobile applications. Provided and proved a better flow for the test team in how to develop and document tests to allow more creative thought from the test engineers. Crafted new standards for developing end-to-end automated tests and implemented them for a major application. Finished development of automated test scripts for a major feature of the BMW Connected mobile application.",
     tags: ["Leadership", "MongoDB", "Protractor", "PostgreSQL", "Cypress", "Typescript", "Git", "testCafé", "Bamboo", "Zephyr", "Postman"]
   },
   {
-    title: "BMW Digital and Mobile Co-op",
+    title: "Cloud Architect Co-op",
     location: "BMW Group @ Greenville, SC",
     startDate: "January 2019",
-    endDate: "Present",
+    endDate: "May 2019",
     color: "#0089FF",
-    description: "Composed 2 Kubernetes manifests for secure, production ready, MariaDB deployments. One manifest is for the highly available Galera cluster and the other is for the Master-Slave cluster, both take advantage of MariaDB Maxscale. Explored AWS Lambda functions and Kubeless functions for a microservice replacement. Developed a serverless function to keep cross account target groups updated in AWS so our Kubernetes cluster’s nodes can stay highly available. Developed Splunk Analytics algorithms to demonstrate user activity and feature effectiveness. Accommodated infrastructure support for 4 major web applications. Each project has several microservices and working in the continuous development agile working model.",
+    description: "Composed 2 Kubernetes manifests for secure, production ready, MariaDB deployments. One manifest is for the highly available Galera cluster and the other is for the Master-Slave cluster, both take advantage of MariaDB MaxScale. Explored AWS Lambda functions and Kubeless functions for a microservice replacement. Developed a lambda function to keep cross account target groups updated in AWS so our Kubernetes cluster’s nodes stay highly available. Developed Splunk Analytics algorithms to demonstrate user activity and feature effectiveness. Accommodated infrastructure support for 4 major web applications. Each project has several microservices and working in the continuous development agile working model.",
     tags: ["AWS", "Kubernetes", "Docker", "Splunk", "NGINX", "Yaml", "Slack", "Git", "Bamboo", "Postman"]
-  }
+  },
+  {
+    title: "Full Stack Developer Co-op",
+    location: "BMW Group @ Greenville, SC",
+    startDate: "May 2019",
+    endDate: "August 2019",
+    color: "#0089FF",
+    description: "Implemented several major features for My Car Is Born in personal portal using React and Redux, then migrated to Apollo. Supported the BMW and MINI brands within the same My Car Is Born repository using a custom webpack config in order to maximize code reusability. Migrated from a RESTful microservice architecture to a single endpoint using Apollo Server and Express. Refined the frontend to be as performant as possible using best practices like code splitting, lazy loading, prefetching, and implementing a PWA using a Workbox service worker.",
+    tags: ["React", "GraphQL", "Apollo Server", "Apollo Client", "Express", "PWA", "Workbox", "Webpack", "Postman", "Docker", "NGINX", "Git", "GitHub", "Bamboo"]
+  },
+  {
+    title: "VR Technical Specialist",
+    location: "Clemson University Immersive Space @ Clemson, SC",
+    startDate: "August 2019",
+    endDate: "Present",
+    color: "#F66733",
+    description: "Making virtual reality experiences more accessible to the general public and providing technical expertise when needed. Helping people make some VR applications. Making a universal VR application launcher so people do not have to go through unity to run their application.",
+    tags: ["Virtual Reality", "Unity", "Oculus", "HTC Vive", "Valve Index", "Steam VR", "Customer service"]
+  },
 ]);
 sendSkillsLanguages([
+  { name: "JavaScript", stars: 5 },
   { name: "TypeScript", stars: 5 },
-  { name: "JavaScript", stars: 4.5 },
+  { name: "HTML", stars: 5 },
+  { name: "CSS", stars: 5 },
+  { name: "SASS", stars: 4.5 },
   { name: "Java", stars: 4 },
+  { name: "Python", stars: 4 },
   { name: "C++", stars: 4 },
   { name: "C", stars: 4 },
-  { name: "HTML", stars: 4 },
-  { name: "CSS", stars: 4 },
-  { name: "MongoDB", stars: 4 },
+  { name: "MongoDB", stars: 3.5 },
   { name: "PHP", stars: 3.5 },
   { name: "MySQL", stars: 3.5 },
   { name: "PostgreSQL", stars: 3 },
   { name: "ARM", stars: 3 }
 ]);
 sendSkillsFramewors([
-  { name: "Protractor", stars: 5 },
-  { name: "Appium", stars: 5 },
-  { name: "Jasmine", stars: 5 },
-  { name: "Cypress", stars: 4.5 },
-  { name: "testCafé", stars: 4.5 },
-  { name: "Selenium", stars: 4.5 },
-  { name: "Angular 4", stars: 4 },
-  { name: "ExpressJS", stars: 3.5 },
-  { name: "NodeJS", stars: 3.5 },
-  { name: "Docker", stars: 3 }
+  { name: "React", stars: 4.5 },
+  { name: "Gatsby", stars: 3.5 },
+  { name: "GraphQL", stars: 4 },
+  { name: "Apollo", stars: 4 },
+  { name: "NodeJS", stars: 4 },
+  { name: "ExpressJS", stars: 4 },
+  { name: "Kubernetes", stars: 4 },
+  { name: "Docker", stars: 4 },
+  { name: "Protractor", stars: 4 },
+  { name: "Appium", stars: 4 },
+  { name: "Jasmine", stars: 4 },
+  { name: "Cypress", stars: 4 },
+  { name: "testCafé", stars: 4 },
+  { name: "Selenium", stars: 4 },
+  { name: "Splunk", stars: 3.5 },
+  { name: "ThreeJS", stars: 3.5 },
+  { name: "WebGL", stars: 3.5 },
 ]);
 sendSkillsTools([
   { name: "Bash", stars: 4.5 },
   { name: "Git", stars: 4.5 },
+  { name: "GitHub", stars: 4.5 },
   { name: "Adobe Xd", stars: 4.5 },
   { name: "Atlassian Suite", stars: 4.0 },
   { name: "Postman", stars: 4.0 },
